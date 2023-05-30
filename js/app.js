@@ -23,6 +23,7 @@ function saludo() {
                 break;
 
             case "Pagar":
+
                 let pago = parseInt(prompt("Ingresar monto a pagar"))
                 if (pago >= 1) {
                     alert("Se realizo el pago correctamente")
@@ -30,8 +31,12 @@ function saludo() {
                 else if (pago < 1) {
                     alert("El pago fue rechazado")
                 }
+            default:
+                alert('El comando ingresado no se reconoce.');
+                break;
         }
         break;
+
     }
 }
 
