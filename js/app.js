@@ -4,10 +4,9 @@ function saludo() {
     alert("Bienvenido a Infinity")
     /*Inicia el programa*/
     let comando;
+    comando = prompt('Ingrese el comando:\n\n1- Ingrese su usuario\n\n2- Salir');
     while (comando != '2') {
-        comando = prompt('Ingrese el comando:\n\n1- Ingrese su usuario\n\n2- Salir');
         switch (comando) {
-
             case '1':
                 nombreUsuario = prompt('Ingrese su usuario:');
                 if (nombreUsuario != null || nombreUsuario != '') {
