@@ -4,28 +4,21 @@ function saludo() {
     alert("Bienvenido a Infinity")
     /*Inicia el programa*/
     let comando;
-    comando = prompt('Ingrese el comando:\n\n1- Ingrese su usuario\n\n2- Salir');
-    while (comando != '2') {
-        switch (comando) {
-            case '1':
-                nombreUsuario = prompt('Ingrese su usuario:');
-                if (nombreUsuario != null || nombreUsuario != '') {
-                    alert(`Se registro como: ${nombreUsuario}`);
-                    document.getElementById('user').innerHTML = `${nombreUsuario}`;
-                    console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
+    comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
+    while (comando != '1') {
+        comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
+        nombreUsuario = prompt('Ingrese su usuario:');
+        if (nombreUsuario != null || nombreUsuario != '') {
+            alert(`Se registro como: ${nombreUsuario}`);
+            document.getElementById('user').innerHTML = `${nombreUsuario}`;
+            console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
 
-                }
-                else {
-                    document.getElementById('user').innerHTML = `Sin Registro`;; //Pide nuevamente que se ingrese el valor
-                }
-                break;
-            default:
-                alert('El comando ingresado no se reconoce.');
-                break;
+        }
+        else {
+            document.getElementById('user').innerHTML = `Sin Registro`;; //Pide nuevamente que se ingrese el valor
         }
     }
 }
-
 // agregar producto al listado
 function addProducto() {
 
