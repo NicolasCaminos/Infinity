@@ -4,20 +4,38 @@ function saludo() {
     alert("Bienvenido a Infinity")
     /*Inicia el programa*/
     let comando;
-    comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
-    while (comando != '1') {
-        nombreUsuario = prompt('Ingrese su usuario:');
-        if (nombreUsuario != null || nombre != '') {
-            alert(`Se registro como: ${nombreUsuario}`);
-            document.getElementById('user').innerHTML = `${nombreUsuario}`;
-            console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
-            break;
-        }
-        else {
-            nombreUsuario = prompt('Ingrese su usuario:'); //valida nuevamente que se ingrese el valor
+
+    while (comando != 'Salir') {
+        comando = prompt('Ingrese el comando:\n\n- Registrar Usuario\n- Pagar\n- Salir');
+
+        switch (comando) {
+
+            case 'Registrar Usuario':
+                nombreUsuario = prompt('Ingrese su usuario:');
+                if (nombreUsuario != null || nombre != '') {
+                    alert(`Se registro como: ${nombreUsuario}`);
+                    document.getElementById('user').innerHTML = `${nombreUsuario}`;
+                    console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
+
+                }
+                else {
+                    nombreUsuario = prompt('Ingrese su usuario:'); //valida nuevamente que se ingrese el valor
+                }
+                break;
+
+            case "Pagar":
+                let pago = parseInt(prompt("Ingresar monto a pagar"))
+                if (pago >= 1) {
+                    alert("Se realizo el pago correctamente")
+                }
+                else if (pago < 1) {
+                    alert("El pago fue rechazado")
+                }
+                break;
         }
     }
 }
+
 // agregar producto al listado
 function addProducto() {
 
