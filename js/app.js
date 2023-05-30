@@ -1,4 +1,4 @@
-
+const iva = 0.21;
 // Bienevenida
 function saludo() {
     alert("Bienvenido a Infinity")
@@ -22,18 +22,22 @@ function saludo() {
 function addProducto() {
 
     var producto = document.getElementById('nameProduct').value;
-    var costo = document.getElementById('costosProduct').value;
+    var costo = parseInt(document.getElementById('costosProduct').value);
     var files = document.getElementById('formFile').value;
     if (producto == "" || costo == "") {
         alert(`Todos los campos son obligatorios`);
     }
     else {
-        console.log(`${producto}`);
-        console.log(`${costo}`);
-        console.log(`${files}`);
-        document.getElementById('productoValue').innerHTML = `${producto}`;
-        document.getElementById('costosValue').innerHTML = `${costo}`;
-        document.getElementById('imagenValue').innerHTML = `${files}`;
+        if (!isNaN(costo) && costo != null) {
+            console.log(`${producto}`);
+            console.log(`${costo}`);
+            console.log(`${files}`);
+            document.getElementById('productoValue').innerHTML = `${producto}`;
+            document.getElementById('costosValue').innerHTML = `$ ${costo * iva + costo}`;
+            document.getElementById('imagenValue').innerHTML = `${files}`;
+        }
+        else {
+            alert(`Costo solo admite campos numericos`);
+        }
     }
-
 }
