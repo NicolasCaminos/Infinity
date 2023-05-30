@@ -5,6 +5,8 @@ function saludo() {
     /*Inicia el programa*/
     let comando;
 
+    let nombreUsuario;
+
     while (comando != 'Salir') {
         comando = prompt('Ingrese el comando:\n\n- Registrar Usuario\n- Pagar\n- Salir');
 
@@ -12,11 +14,8 @@ function saludo() {
 
             case 'Registrar Usuario':
                 nombreUsuario = prompt('Ingrese su usuario:');
-                if (nombreUsuario != null || nombre != '') {
+                if (nombreUsuario != null || nombreUsuario != '') {
                     alert(`Se registro como: ${nombreUsuario}`);
-                    document.getElementById('user').innerHTML = `${nombreUsuario}`;
-                    console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
-
                 }
                 else {
                     nombreUsuario = prompt('Ingrese su usuario:'); //valida nuevamente que se ingrese el valor
@@ -31,9 +30,10 @@ function saludo() {
                 else if (pago < 1) {
                     alert("El pago fue rechazado")
                 }
-                break;
         }
+        break;
     }
+}
 }
 
 // agregar producto al listado
