@@ -10,31 +10,33 @@ function saludo() {
         if (nombreUsuario != null || nombre != '') {
             alert(`Se registro como: ${nombreUsuario}`);
             document.getElementById('user').innerHTML = `${nombreUsuario}`;
-            console.log(`Usuario logueado como: ${nombreUsuario}`);
-            break;
+            console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
+
         }
         else {
-            nombreUsuario = prompt('Ingrese su usuario:');
+            nombreUsuario = prompt('Ingrese su usuario:'); //Pide nuevamente que se ingrese el valor
         }
     }
 }
-
+// agregar producto al listado
 function addProducto() {
 
-    var producto = document.getElementById('nameProduct').value;
-    var costo = parseInt(document.getElementById('costosProduct').value);
-    var files = document.getElementById('formFile').value;
+    var producto = document.getElementById('nameProduct').value; // Captura valor de ID nameProduct
+    var costo = parseInt(document.getElementById('costosProduct').value);// Captura valor de ID costosProduct y los parsea a entero
+    var files = document.getElementById('formFile').value;/// Captura valor de ID formFile que tomará la ruta para almacenar imagen
+    // valida que los cambio no esten en blanco
     if (producto == "" || costo == "") {
         alert(`Todos los campos son obligatorios`);
     }
     else {
+        // Valida que el campo costo sea numerico
         if (!isNaN(costo) && costo != null) {
-            console.log(`${producto}`);
-            console.log(`${costo}`);
-            console.log(`${files}`);
-            document.getElementById('productoValue').innerHTML = `${producto}`;
-            document.getElementById('costosValue').innerHTML = `$ ${costo * iva + costo}`;
-            document.getElementById('imagenValue').innerHTML = `${files}`;
+            console.log(`Nombre del producto Ingresado: ${producto}`); // Muestra en consola: Nombre del producto Ingresado: ${producto}
+            console.log(`Costo: $ ${costo}`); // Muestra en consola:Costo: $ ${costo}
+            console.log(`Archivo: ${files}`); // Muestra en consola:Archivo: ${files}
+            document.getElementById('productoValue').innerHTML = `${producto}`;// Muestra en span : producto
+            document.getElementById('costosValue').innerHTML = `$ ${costo * iva + costo}`;// Muestra en span : $ costo final
+            document.getElementById('imagenValue').innerHTML = `${files}`; // Muestra en span : ruta del archivo
         }
         else {
             alert(`Costo solo admite campos numericos`);
