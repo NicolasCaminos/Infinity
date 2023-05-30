@@ -22,8 +22,8 @@ Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se alo
 
 ### Entrega 0.1
 
-<li>Crear un algorimto con un condicional.</li>
-<li>Crear un algorimto con un ciclo.</li>
+<li>Crear un algoritmo con un condicional.</li>
+<li>Crear un algoritmo con un ciclo.</li>
 <li>Maquetar la web: utilizar los tags, en especial los semánticos, para describir la estructura de la web desde el código.</li>
 <li>Herramientas usadas:</li>
 <li>HTML (uso de etiquetas contenedoras, etiquetas multimedia y etiquetas de texto)</li>
