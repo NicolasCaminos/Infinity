@@ -5,7 +5,8 @@ function saludo() {
     /*Inicia el programa*/
     let comando;
     comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
-    while (comando != '1') {
+
+    while (comando != "1") {
         comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
         nombreUsuario = prompt('Ingrese su usuario:');
         if (nombreUsuario != null || nombreUsuario != '') {
@@ -15,7 +16,7 @@ function saludo() {
 
         }
         else {
-            document.getElementById('user').innerHTML = `Sin Registro`;; //Pide nuevamente que se ingrese el valor
+            document.getElementById('user').innerHTML = `Sin Registro`;
         }
     }
 }
