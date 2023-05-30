@@ -5,15 +5,13 @@ function saludo() {
     /*Inicia el programa*/
     let comando;
 
-    let nombreUsuario;
-
     while (comando != 'Salir') {
         comando = prompt('Ingrese el comando:\n\n- Registrar Usuario\n- Pagar\n- Salir');
 
         switch (comando) {
 
             case 'Registrar Usuario':
-                nombreUsuario = prompt('Ingrese su usuario:');
+                let nombreUsuario = prompt('Ingrese su usuario:');
                 if (nombreUsuario != null || nombreUsuario != '') {
                     alert(`Se registro como: ${nombreUsuario}`);
                 }
