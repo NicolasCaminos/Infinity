@@ -296,9 +296,9 @@ p-last-child {
   font-size: 16px;
 }
 
-#footerhystory {
+#base-footer-addPro {
   position: relative;
-  top: 80vh;
+  top: 40vh;
   width: 100%;
 }
 

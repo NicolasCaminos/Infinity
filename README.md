@@ -84,6 +84,7 @@ $ npm install -g sass
 $ npm start
 $ npm install -g node-sass
 $ npm install --save sanitize.css
+$ npm install sweetalert2
 
 ```
 
