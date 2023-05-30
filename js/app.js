@@ -7,14 +7,14 @@ function saludo() {
     comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
     while (comando != '1') {
         nombreUsuario = prompt('Ingrese su usuario:');
-        if (nombreUsuario != null || nombre != '') {
+        if (nombreUsuario != null || nombreUsuario != '') {
             alert(`Se registro como: ${nombreUsuario}`);
             document.getElementById('user').innerHTML = `${nombreUsuario}`;
             console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
 
         }
         else {
-            nombreUsuario = prompt('Ingrese su usuario:'); //Pide nuevamente que se ingrese el valor
+            document.getElementById('user').innerHTML = `Sin Registro`;; //Pide nuevamente que se ingrese el valor
         }
     }
 }
