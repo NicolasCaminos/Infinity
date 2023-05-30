@@ -1,0 +1,49 @@
+//Variables
+@import "utilities/variables";
+//base
+@import "base/base";
+//Themes
+@import "themes/oasis";
+//_typography
+@import "base/typography";
+//utils
+@import "base/utils.scss";
+//Loyauts
+@import "layouts/base-layout";
+//Vendors
+@import "vendors/vendors";
+//Index 
+@import "views/index";
+//Bootstrap
+@import "vendors/bootstrap";
+//Mixin
+@import "utilities/mixins";
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+
+
+/*PSEDO CLASES*/
+
+:is(h1, h2) {
+    display: block;
+    text-align: center;
+}
+
+:is(.albumStudio h2, .liveStudio h2, .singleAlbum h2, .compilationAlbum h2) {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+:is(.article_videoHystory a) {
+    text-decoration: none;
+}
+
+:is(.embed-iframe-items1, .embed-iframe-items2, .embed-iframe-items3, .embed-iframe-items4, .embed-iframe-items5) {
+    display: relative;
+    width: fit-content;
+}
+
+/* // Small devices (landscape phones, 576px and up) */

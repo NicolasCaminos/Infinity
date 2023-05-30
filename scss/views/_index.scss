@@ -1,0 +1,15 @@
+/*INDEX*/
+.user_bg {
+    height: 22px;
+    width: 22px;
+
+}
+
+body {
+    & main {
+        & .row {
+            margin-top: 10vh;
+        }
+
+    }
+}
