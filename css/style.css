@@ -36,69 +36,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+
 :root {
-  color-scheme: "light";
-  overflow-y: auto;
-  overflow-x: hidden;
+    color-scheme: "light";
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 body {
-  height: 100vh;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-fontt-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -webkit-top-highlight-color: transparent;
-  color: var(--oasis-body-text-color, #64748b) !important;
-  line-height: var(--oasis-line-height-base, 1.5);
-  font-weight: var(--oasis-font-weigth-base, 400);
-  background-color: var(--oasis-body-bg-color, #f1f5f9) !important;
-  font-family: var(--oasis-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fontt-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-top-highlight-color: transparent;
+    color: var(--oasis-body-text-color, #64748b) !important;
+    line-height: var(--oasis-line-height-base, 1.5);
+    font-weight: var(--oasis-font-weigth-base, 400);
+    background-color: var(--oasis-body-bg-color, #f1f5f9) !important;
+    font-family: var(--oasis-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
 }
+
 body body::-webkit-scrollbar {
-  width: 10px;
-  height: 16px;
+    width: 10px;
+    height: 16px;
 }
+
 body body::-webkit-scrollbar-thumb {
-  background-color: rgba(20, 20, 20, 0.805);
-  border-radius: 10px;
+    background-color: rgba(20, 20, 20, 0.805);
+    border-radius: 10px;
 }
+
 body body::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(169, 169, 169, 0.668);
+    background-color: rgba(169, 169, 169, 0.668);
 }
+
 body img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
+
 body header {
-  color: var(--oasis-body-bg-color, #f1f5f9);
+    color: var(--oasis-body-bg-color, #f1f5f9);
 }
 
 [data-theme=dark] {
-  color-scheme: dark;
-  --oasis-body-bg-color: #0f172a;
-  --oasis-body-text-color: #FFFFFF;
-  --oasis-heading-text-color: #FFFFFF;
-}
-[data-theme=dark] #navbar_oasis {
-  background-color: #0f172a !important;
-  color: #FFFFFF !important;
-}
-[data-theme=dark] #navbar_oasis .navbar-toggler {
-  background-color: #FFFFFF !important;
-}
-[data-theme=dark] #navbar_oasis li a {
-  color: #FFFFFF !important;
-}
-[data-theme=dark] .embed-iframe-items::-webkit-scrollbar-thumb {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-}
-[data-theme=dark] a {
-  color: #FFFFFF !important;
+    color-scheme: dark;
+    --oasis-body-bg-color: #0f172a;
+    --oasis-body-text-color: #FFFFFF;
+    --oasis-heading-text-color: #FFFFFF;
 }
 
-/*Hystory*/ /*css Variables prefix*/
+[data-theme=dark] #navbar_oasis {
+    background-color: #0f172a !important;
+    color: #FFFFFF !important;
+}
+
+[data-theme=dark] #navbar_oasis .navbar-toggler {
+    background-color: #FFFFFF !important;
+}
+
+[data-theme=dark] #navbar_oasis li a {
+    color: #FFFFFF !important;
+}
+
+[data-theme=dark] .embed-iframe-items::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+[data-theme=dark] a {
+    color: #FFFFFF !important;
+}
+
+/*Hystory*/
+/*css Variables prefix*/
 /*font family*/
 /*font sizes*/
 /*12px*/
@@ -121,68 +133,72 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--oasis-heading-text-color, #334155);
-  font-weight: 500;
-  line-height: 1.25;
-  font-family: var(--oasis-font-secondary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    color: var(--oasis-heading-text-color, #334155);
+    font-weight: 500;
+    line-height: 1.25;
+    font-family: var(--oasis-font-secondary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
 }
+
 h1-first-child,
 h2-first-child,
 h3-first-child,
 h4-first-child,
 h5-first-child,
 h6-first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
+
 h1-last-child,
 h2-last-child,
 h3-last-child,
 h4-last-child,
 h5-last-child,
 h6-last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 h1 {
-  margin: 32px 0;
-  font-size: 40px;
+    margin: 32px 0;
+    font-size: 40px;
 }
 
 h2 {
-  margin: 32px 0;
-  font-size: 36px;
+    margin: 32px 0;
+    font-size: 36px;
 }
 
 h3 {
-  margin: 32px 0;
-  font-size: 30px;
+    margin: 32px 0;
+    font-size: 30px;
 }
 
 h4 {
-  margin: 20px 0;
-  font-size: 24px;
+    margin: 20px 0;
+    font-size: 24px;
 }
 
 h5 {
-  margin: 18px 0;
-  font-size: 20px;
+    margin: 18px 0;
+    font-size: 20px;
 }
 
 h6 {
-  margin: 16px 0;
-  font-size: 18px;
+    margin: 16px 0;
+    font-size: 18px;
 }
 
 p {
-  color: var(--oasis-body-text-color, #64748b);
-  margin: 16px 0;
-  font-weight: 1.5;
+    color: var(--oasis-body-text-color, #64748b);
+    margin: 16px 0;
+    font-weight: 1.5;
 }
+
 p-first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
+
 p-last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /*css Variables prefix*/
@@ -203,22 +219,24 @@ p-last-child {
 /*COLORS*/
 /*THEME GLOBAL VALUES*/
 .container {
-  width: 100%;
-  display: block;
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* // Small devices (landscape phones, 576px and up) */
+    width: 100%;
+    display: block;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* // Small devices (landscape phones, 576px and up) */
 }
+
 @media only screen and (min-width: 360px) and (max-width: 576px) {
-  .container p {
-    font-size: 0.75rem !important;
-  }
-  .container h3 {
-    font-size: 1.125rem !important;
-  }
+    .container p {
+        font-size: 0.75rem !important;
+    }
+
+    .container h3 {
+        font-size: 1.125rem !important;
+    }
 }
 
 /*css Variables prefix*/
@@ -240,110 +258,124 @@ p-last-child {
 /*THEME GLOBAL VALUES*/
 /*Variables locales*/
 .base-layout {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .base-header {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9000;
-  position: fixed;
-  box-shadow: 0 0 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 1px rgba(10, 10, 10, 0.02);
-  border-bottom: 1px solid var(--prefix-header-border-color, #cbd5e1);
-  background-color: var(--prefix-header-bg-color, #cbd5e1) !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    position: fixed;
+    box-shadow: 0 0 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 1px rgba(10, 10, 10, 0.02);
+    border-bottom: 1px solid var(--prefix-header-border-color, #cbd5e1);
+    background-color: var(--prefix-header-bg-color, #cbd5e1) !important;
 }
+
 .base-headernav.navbar {
-  background-color: var(--prefix-header-bg-color, #cbd5e1) !important;
+    background-color: var(--prefix-header-bg-color, #cbd5e1) !important;
 }
+
 .base-headernav.navbar .bg-light {
-  background-color: var(--prefix-header-bg-color, #cbd5e1) !important;
+    background-color: var(--prefix-header-bg-color, #cbd5e1) !important;
 }
+
 .base-content {
-  flex: 1;
-  position: relative;
-  margin-top: 7vh;
+    flex: 1;
+    position: relative;
+    margin-top: 7vh;
 }
+
 .base-footer {
-  display: flex;
-  position: relative;
-  margin-top: 20vh;
-  align-items: center;
-  padding: 32px 16px;
-  font-size: 16px;
-  font-weight: 400;
-  bottom: 0;
-  background-color: var(--prefix-header-bg-color, #1e293b);
+    display: flex;
+    position: relative;
+    margin-top: 20vh;
+    align-items: center;
+    padding: 32px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    bottom: 0;
+    background-color: var(--prefix-header-bg-color, #1e293b);
 }
+
 .base-footer p {
-  color: var(--prefix-header-border-color, #cbd5e1);
-  display: flex;
+    color: var(--prefix-header-border-color, #cbd5e1);
+    display: flex;
 }
+
 .base-footer ul {
-  text-align: right;
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  left: 120vh;
-  bottom: 0px;
-  align-items: center;
-  justify-content: right;
-  text-decoration: none;
-  position: relative;
+    text-align: right;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    left: 120vh;
+    bottom: 0px;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+    position: relative;
 }
+
 .base-footer li a {
-  text-decoration: none;
-  font-size: 16px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 #base-footer-addPro {
-  position: relative;
-  top: 40vh;
-  width: 100%;
+    position: relative;
+    top: 40vh;
+    width: 100%;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 576px) {
-  footer {
-    position: relative;
-    width: 100%;
-    height: 20vh;
-    top: 20vh;
-    font-size: 15px;
-  }
-  footer ul {
-    left: 15vh !important;
-    list-style: none;
-    gap: 15px;
-    justify-content: right;
-    text-decoration: none;
-  }
-  footer ul li a {
-    text-decoration: none;
-    font-size: 5px;
-  }
+    footer {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        top: 20vh;
+        font-size: 15px;
+    }
+
+    footer ul {
+        left: 15vh !important;
+        list-style: none;
+        gap: 15px;
+        justify-content: right;
+        text-decoration: none;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        font-size: 5px;
+    }
 }
+
 /* */
 @media only screen and (min-width: 768px) and (max-width: 975px) {
-  footer {
-    position: relative;
-    width: 100%;
-    height: 20vh;
-    top: 20vh;
-    font-size: 15px;
-  }
-  footer ul {
-    position: relative;
-    left: 35vh !important;
-    list-style: none;
-    gap: 15px;
-    justify-content: right;
-    text-decoration: none;
-  }
-  footer ul li a {
-    text-decoration: none;
-    font-size: 15px;
-  }
+    footer {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        top: 20vh;
+        font-size: 15px;
+    }
+
+    footer ul {
+        position: relative;
+        left: 35vh !important;
+        list-style: none;
+        gap: 15px;
+        justify-content: right;
+        text-decoration: none;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        font-size: 15px;
+    }
 }
+
 /* // X-Large devices (large desktops, 1200px and up)*/
 /* Document
  * ========================================================================== */
@@ -354,10 +386,10 @@ p-last-child {
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  /* 1 */
-  background-repeat: no-repeat;
-  /* 2 */
+    box-sizing: border-box;
+    /* 1 */
+    background-repeat: no-repeat;
+    /* 2 */
 }
 
 /**
@@ -366,10 +398,10 @@ p-last-child {
  */
 ::before,
 ::after {
-  text-decoration: inherit;
-  /* 1 */
-  vertical-align: inherit;
-  /* 2 */
+    text-decoration: inherit;
+    /* 1 */
+    vertical-align: inherit;
+    /* 2 */
 }
 
 /**
@@ -381,20 +413,20 @@ p-last-child {
  * 6. Prevent adjustments of font size after orientation changes in iOS.
  */
 :where(:root) {
-  cursor: default;
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-  overflow-wrap: break-word;
-  /* 3 */
-  -moz-tab-size: 4;
-  /* 4 */
-  tab-size: 4;
-  /* 4 */
-  -webkit-tap-highlight-color: transparent;
-  /* 5 */
-  -webkit-text-size-adjust: 100%;
-  /* 6 */
+    cursor: default;
+    /* 1 */
+    line-height: 1.5;
+    /* 2 */
+    overflow-wrap: break-word;
+    /* 3 */
+    -moz-tab-size: 4;
+    /* 4 */
+    tab-size: 4;
+    /* 4 */
+    -webkit-tap-highlight-color: transparent;
+    /* 5 */
+    -webkit-text-size-adjust: 100%;
+    /* 6 */
 }
 
 /* Sections
@@ -403,7 +435,7 @@ p-last-child {
  * Remove the margin in all browsers (opinionated).
  */
 :where(body) {
-  margin: 0;
+    margin: 0;
 }
 
 /**
@@ -411,8 +443,8 @@ p-last-child {
  * `article` contexts in Chrome, Edge, Firefox, and Safari.
  */
 :where(h1) {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -421,7 +453,7 @@ p-last-child {
  * Remove the margin on nested lists in Chrome, Edge, and Safari.
  */
 :where(dl, ol, ul) :where(dl, ol, ul) {
-  margin: 0;
+    margin: 0;
 }
 
 /**
@@ -429,26 +461,26 @@ p-last-child {
  * 2. Add the correct box sizing in Firefox.
  */
 :where(hr) {
-  color: inherit;
-  /* 1 */
-  height: 0;
-  /* 2 */
+    color: inherit;
+    /* 1 */
+    height: 0;
+    /* 2 */
 }
 
 /**
  * Remove the list style on navigation lists in all browsers (opinionated).
  */
 :where(nav) :where(ol, ul) {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 /**
  * Prevent VoiceOver from ignoring list semantics in Safari (opinionated).
  */
 :where(nav li)::before {
-  content: "​";
-  float: left;
+    content: "​";
+    float: left;
 }
 
 /**
@@ -457,12 +489,12 @@ p-last-child {
  * 3. Prevent overflow of the container in all browsers (opinionated).
  */
 :where(pre) {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-  overflow: auto;
-  /* 3 */
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+    overflow: auto;
+    /* 3 */
 }
 
 /* Text-level semantics
@@ -471,15 +503,15 @@ p-last-child {
  * Add the correct text decoration in Safari.
  */
 :where(abbr[title]) {
-  text-decoration: underline;
-  text-decoration: underline dotted;
+    text-decoration: underline;
+    text-decoration: underline dotted;
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 :where(b, strong) {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 /**
@@ -487,17 +519,17 @@ p-last-child {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 :where(code, kbd, samp) {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
 }
 
 /**
  * Add the correct font size in all browsers.
  */
 :where(small) {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 /* Embedded content
@@ -506,21 +538,21 @@ p-last-child {
  * Change the alignment on media elements in all browsers (opinionated).
  */
 :where(audio, canvas, iframe, img, svg, video) {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /**
  * Remove the border on iframes in all browsers (opinionated).
  */
 :where(iframe) {
-  border-style: none;
+    border-style: none;
 }
 
 /**
  * Change the fill color to match the text color in all browsers (opinionated).
  */
 :where(svg:not([fill])) {
-  fill: currentColor;
+    fill: currentColor;
 }
 
 /* Tabular data
@@ -531,12 +563,12 @@ p-last-child {
  * 3. Remove text indentation from table contents in Chrome, Edge, and Safari.
  */
 :where(table) {
-  border-collapse: collapse;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
-  text-indent: 0;
-  /* 3 */
+    border-collapse: collapse;
+    /* 1 */
+    border-color: inherit;
+    /* 2 */
+    text-indent: 0;
+    /* 3 */
 }
 
 /* Forms
@@ -545,28 +577,28 @@ p-last-child {
  * Remove the margin on controls in Safari.
  */
 :where(button, input, select) {
-  margin: 0;
+    margin: 0;
 }
 
 /**
  * Correct the inability to style buttons in iOS and Safari.
  */
 :where(button, [type=button i], [type=reset i], [type=submit i]) {
-  -webkit-appearance: button;
+    -webkit-appearance: button;
 }
 
 /**
  * Change the inconsistent appearance in all browsers (opinionated).
  */
 :where(fieldset) {
-  border: 1px solid #a0a0a0;
+    border: 1px solid #a0a0a0;
 }
 
 /**
  * Add the correct vertical alignment in Chrome, Edge, and Firefox.
  */
 :where(progress) {
-  vertical-align: baseline;
+    vertical-align: baseline;
 }
 
 /**
@@ -574,10 +606,10 @@ p-last-child {
  * 3. Change the resize direction in all browsers (opinionated).
  */
 :where(textarea) {
-  margin: 0;
-  /* 1 */
-  resize: vertical;
-  /* 3 */
+    margin: 0;
+    /* 1 */
+    resize: vertical;
+    /* 3 */
 }
 
 /**
@@ -585,10 +617,10 @@ p-last-child {
  * 2. Correct the outline style in Safari.
  */
 :where([type=search i]) {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
 }
 
 /**
@@ -596,22 +628,22 @@ p-last-child {
  */
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
-  height: auto;
+    height: auto;
 }
 
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
 ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
+    color: inherit;
+    opacity: 0.54;
 }
 
 /**
  * Remove the inner padding in Chrome, Edge, and Safari on macOS.
  */
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 /**
@@ -619,10 +651,10 @@ p-last-child {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
 }
 
 /* Interactive
@@ -631,29 +663,29 @@ p-last-child {
  * Add the correct styles in Safari.
  */
 :where(dialog) {
-  background-color: white;
-  border: solid;
-  color: black;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 0;
-  margin: auto;
-  padding: 1em;
-  position: absolute;
-  right: 0;
-  width: -moz-fit-content;
-  width: fit-content;
+    background-color: white;
+    border: solid;
+    color: black;
+    height: -moz-fit-content;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 :where(dialog:not([open])) {
-  display: none;
+    display: none;
 }
 
 /*
  * Add the correct display in Safari.
  */
 :where(details > summary:first-of-type) {
-  display: list-item;
+    display: list-item;
 }
 
 /* Accessibility
@@ -662,14 +694,14 @@ p-last-child {
  * Change the cursor on busy elements in all browsers (opinionated).
  */
 :where([aria-busy=true i]) {
-  cursor: progress;
+    cursor: progress;
 }
 
 /*
  * Change the cursor on control elements in all browsers (opinionated).
  */
 :where([aria-controls]) {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /*
@@ -677,7 +709,7 @@ p-last-child {
  * inoperable elements in all browsers (opinionated).
  */
 :where([aria-disabled=true i], [disabled]) {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 /*
@@ -685,22 +717,22 @@ p-last-child {
  * in all browsers (opinionated).
  */
 :where([aria-hidden=false i][hidden]) {
-  display: initial;
+    display: initial;
 }
 
 :where([aria-hidden=false i][hidden]:not(:focus)) {
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
 }
 
 /*INDEX*/
 .user_bg {
-  height: 22px;
-  width: 22px;
+    height: 22px;
+    width: 22px;
 }
 
 body main .row {
-  margin-top: 10vh;
+    margin-top: 10vh;
 }
 
 /*css Variables prefix*/
@@ -722,22 +754,22 @@ body main .row {
 /*THEME GLOBAL VALUES*/
 /*PSEDO CLASES*/
 :is(h1, h2) {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 :is(.albumStudio h2, .liveStudio h2, .singleAlbum h2, .compilationAlbum h2) {
-  text-align: center;
-  margin-top: 10vh;
+    text-align: center;
+    margin-top: 10vh;
 }
 
 :is(.article_videoHystory a) {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 :is(.embed-iframe-items1, .embed-iframe-items2, .embed-iframe-items3, .embed-iframe-items4, .embed-iframe-items5) {
-  display: relative;
-  width: fit-content;
+    display: relative;
+    width: fit-content;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
