@@ -5,18 +5,16 @@ function saludo() {
     /*Inicia el programa*/
     let comando;
     comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
-
-    while (comando != "1") {
-        comando = prompt('Ingrese el comando:\n\n1- Salir\n2- Ingrese su usuario\n');
+    while (comando != '1') {
         nombreUsuario = prompt('Ingrese su usuario:');
-        if (nombreUsuario != null || nombreUsuario != '') {
+        if (nombreUsuario != null || nombre != '') {
             alert(`Se registro como: ${nombreUsuario}`);
             document.getElementById('user').innerHTML = `${nombreUsuario}`;
             console.log(`Usuario logueado como: ${nombreUsuario}`);// Muestra en consola: Usuario logueado como: ${nombreUsuario}
-
+            break;
         }
         else {
-            document.getElementById('user').innerHTML = `Sin Registro`;
+            nombreUsuario = prompt('Ingrese su usuario:'); //valida nuevamente que se ingrese el valor
         }
     }
 }
@@ -24,9 +22,8 @@ function saludo() {
 function addProducto() {
 
     var producto = document.getElementById('nameProduct').value; // Captura valor de ID nameProduct
-    var costo = parseInt(document.getElementById('costosProduct').value);// Captura valor de ID costosProduct y los parsea a entero
-    var files = document.getElementById('formFile').value;/// Captura valor de ID formFile que tomará la ruta para almacenar imagen
-    // valida que los cambio no esten en blanco
+    var costo = parseInt(document.getElementById('costosProduct').value);// Captura valor de ID costosProduct y los pas
+    var files = document.getElementById('formFile').value;/// Captura valor de ID
     if (producto == "" || costo == "") {
         alert(`Todos los campos son obligatorios`);
     }
