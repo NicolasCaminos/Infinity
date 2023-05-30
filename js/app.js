@@ -34,7 +34,6 @@ function saludo() {
         break;
     }
 }
-}
 
 // agregar producto al listado
 function addProducto() {
