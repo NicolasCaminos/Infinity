@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 /*Variables locales*/
-$header-bg-color: var(--#{prefix}-header-bg-color, $color-slate-300);
+$header-bg-color: var(--#{prefix}-header-bg-color, $color-slate-50);
 $header-border-color: var(--#{prefix}-header-border-color, $color-slate-300);
 
 $footer-bg-color: var(--#{prefix}-header-bg-color, $color-slate-800);
@@ -38,7 +38,7 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
     &-content {
         flex: 1;
         position: relative;
-        margin-top: 7vh;
+        margin-top: 10vh;
     }
 
     &-footer {
@@ -76,6 +76,13 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
             font-size: 16px;
         }
 
+    }
+
+    &-contact-form {
+        background-color: $color-blue-600;
+        height: 350px;
+        margin-top: 80vh;
+        z-index: 9000;
     }
 }
 

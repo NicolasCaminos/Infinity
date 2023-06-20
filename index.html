@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Infinity</title>
 </head>
 
@@ -18,8 +19,7 @@
     <header class="base-header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <img src="" alt="" srcset="">
-
+                <img class="logo_Infinity" src="img/4.png" class="d-block w-100" alt="...">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -27,14 +27,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Infinity</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="rol" href="pages/addProduct.html" hidden>Registrar Productos</a>
+                            <a class="nav-link" id="rol" href="pages/addProduct.html">Registrar Productos</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -121,8 +119,60 @@
                 </div>
             </div>
         </div>
+        <section class="base-contact-form">
+
+            <form class=" row g-3">
+                <h2>Contacto</h2>
+                <div class="col-auto">
+                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="inputPassword2" class="visually-hidden">Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <div class="">
+                        <a type="submit" class="btn btn-warning mb-3" href="#">Submit</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="base-partners">
+            <div class="contenedor ">
+                <h2 class="u-align-center u-text u-text-1">Algunas de nuestras marcas oficiales</h2>
+                <div class="container-fluid">
+                    <div class="d-flex flex-row mb-3">
+                        <div class="partners_images ">
+                            <div class="u-container-layout u-similar-container u-container-layout-1">
+                                <img class="u-image u-image-contain u-image-1" src="img/294699_asus_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-2">
+                                <img class="u-image u-image-contain u-image-2" src="img/4691411_dell_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-3">
+                                <img class="u-image u-image-contain u-image-3"
+                                    src="img/7422538_apple_computer_laptop_technology_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-4">
+                                <img class="u-image u-image-contain u-image-4"
+                                    src="img/7422460_hp_computer_hardware_laptop_icon.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--    Plugin sweet Alert 2  -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src=" //cdn.jsdelivr.net/npm/sweetalert2@11">
+        </script>
 
         <script src="js/app.js"></script>
     </main>

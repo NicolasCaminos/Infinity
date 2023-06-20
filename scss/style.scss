@@ -25,25 +25,5 @@
 
 
 
-/*PSEDO CLASES*/
-
-:is(h1, h2) {
-    display: block;
-    text-align: center;
-}
-
-:is(.albumStudio h2, .liveStudio h2, .singleAlbum h2, .compilationAlbum h2) {
-    text-align: center;
-    margin-top: 10vh;
-}
-
-:is(.article_videoHystory a) {
-    text-decoration: none;
-}
-
-:is(.embed-iframe-items1, .embed-iframe-items2, .embed-iframe-items3, .embed-iframe-items4, .embed-iframe-items5) {
-    display: relative;
-    width: fit-content;
-}
 
 /* // Small devices (landscape phones, 576px and up) */
