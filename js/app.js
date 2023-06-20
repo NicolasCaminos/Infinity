@@ -6,7 +6,7 @@ const products = {
     file: "",
     price: ""
 }
-//FUNCIONES
+
 // Bienevenida
 function saludo() {
     Swal.fire(
@@ -42,6 +42,8 @@ function saludo() {
     }
 
 }
+
+// COMENZAMOS PROYECTO DE CARRITO
 class Carrito {
     constructor() {
         this.productos = [];

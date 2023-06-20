@@ -20,7 +20,7 @@ Este sitio nació con la idea de hacer una tienda Ecommerce para productos.
 Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se aloja el proyecto final) y en la rama V.01 donde se trabajan las updates y fix.
 <br>
 
-### Entrega 0.1
+### Entrega 0.1: Simulador interactivo
 
 <li>Crear un algoritmo con un condicional.</li>
 <li>Crear un algoritmo con un ciclo.</li>
@@ -31,14 +31,32 @@ Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se alo
 <li>CSS (con modificadores de texto, colores, listas y box modeling)</li>
 <br>
 
-### Entrega 0.2
+### Entrega 0.2: Estructura, variables y objetos
+Objetivos generales
+
+Codificar la funcionalidad inicial del simulador. 
+Identificar el flujo de trabajo del script en términos de captura de entradas ingresadas por el usuario, procesamiento esencial del simulador y notificación de resultados en forma de salida
+
+Objetivos específicos
+
+Capturar entradas mediante prompt().
+Declarar variables y objetos necesarios para simular el proceso seleccionado.
+Crear funciones y/o métodos para realizar operaciones (suma, resta, concatenación, división, porcentaje, etc).
+Efectuar una salida, que es el resultado de los datos procesados, la cual puede hacerse por alert() o console.log().
+
+<li>Estructura HTML del proyecto. </li>
+<li>Variables de JS necesarias. </li>
+<li>Funciones esenciales del proceso a simular.</li>
+<li>Objetos de JS.</li>
+<li>Arrays.</li>
+<li>Métodos de búsqueda y filtrado sobre el Array.</li>:
 
 
-### Entrega 0.3
+<!-- ### Entrega 0.3
 
 
 
-### Entrega 0.4 Final
+### Entrega 0.4 Final -->
 
 
 ---
@@ -70,6 +88,9 @@ Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se alo
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <h2>V2.19.6</h2></p>
 <br>
 
+<a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert" width="40" height="40"/> </a> <h2>v11.7.12 6</h2></p>
+<br>
+
 ---
 
 ## Installation
@@ -92,19 +113,18 @@ $ npm install sweetalert2
 
 ## Collaboration
 
-<li></li>
+<li>Sebastián Cámara: Profesor</li>
 <li>Nicolás Caminos</li>
-<li></li>
+<li>Romano Ibarra: Tutor</li>
 <br>
 
 ---
 
 ## FAQs
 
-Puede visitar la web en: <a href="https://nicolascaminos.github.io/Oasis/" target="_blank" rel="noreferrer"> <img src="https://oasisinet.com/wp-content/uploads/2022/05/cropped-oasis-fav-32x32.png" alt="oasis" width="40" height="40"/> </a><a href="https://nicolascaminos.github.io/Oasis/" target="_blank" rel="noreferrer">https://nicolascaminos.github.io/Oasis/</a>
+Puede visitar la web en: <a href="https://nicolascaminos.github.io/Infinity/" target="_blank" rel="noreferrer"> <img src="img/3.png" alt="oasis" width="40" height="40"/> </a><a href="https://nicolascaminos.github.io/Infinity/" target="_blank" rel="noreferrer">https://nicolascaminos.github.io/Infinity/</a>
 
 <br>
-
 Muchas Gracias.
 <br>
 
