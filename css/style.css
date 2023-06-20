@@ -267,7 +267,6 @@ p-last-child {
 .base-footer {
   display: flex;
   position: relative;
-  margin-top: 20vh;
   align-items: center;
   padding: 32px 16px;
   font-size: 16px;
@@ -300,6 +299,13 @@ p-last-child {
   height: 350px;
   margin-top: 10vh;
   z-index: 9000;
+}
+.base-contact-form h2 {
+  text-align: center;
+  color: white;
+}
+.base-socialmedia {
+  background-color: #478AC9;
 }
 
 #base-footer-addPro {
@@ -699,6 +705,23 @@ p-last-child {
   position: absolute;
 }
 
+/*css Variables prefix*/
+/*font family*/
+/*font sizes*/
+/*12px*/
+/*14px*/
+/*16px*/
+/*18px*/
+/*20px*/
+/*24px*/
+/*30*/
+/*36px*/
+/*48px*/
+/*60px*/
+/* font weigth*/
+/*leading / line heights*/
+/*COLORS*/
+/*THEME GLOBAL VALUES*/
 /*INDEX*/
 .user_bg {
   height: 22px;
@@ -721,10 +744,6 @@ body main .card img {
   height: 180px;
   width: 180px;
 }
-body main .base-contact-form h2 {
-  text-align: center;
-  color: white;
-}
 body main .base-contact-form .col-auto {
   display: flex;
   background-color: white !important;
@@ -744,6 +763,8 @@ body main .base-contact-form .col-auto .mb-3 {
 }
 body main .base-partners {
   align-items: center;
+  height: 300px;
+  margin-top: 10vh;
 }
 body main .base-partners .container-fluid .d-flex {
   gap: 60px;
@@ -751,6 +772,56 @@ body main .base-partners .container-fluid .d-flex {
 body main .base-partners .container-fluid .partners_images {
   height: 160px;
   width: 150px;
+  display: inline-block;
+}
+body main .base-socialmedia .reds ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+body main .base-socialmedia .reds li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+body main .base-socialmedia .reds li img {
+  height: 50px;
+  width: 50px;
+}
+body main .base-experience {
+  position: relative;
+  justify-content: center;
+}
+body main .base-experience .experiences {
+  display: inline-block;
+  background-color: #e2e8f0;
+  width: 300px;
+  margin: 10px 10px 10px 10px;
+}
+body main .base-experience .experiences img {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  float: left;
+}
+body main .base-experience .experiences img p {
+  display: flex;
+  text-align: center;
+  font-size: 7px;
+  margin-left: 60px;
+}
+body main .base-experience .experiences .instagram_log {
+  height: 25px;
+  width: 25px;
+}
+body main .base-experience .experiences p {
+  display: flex;
+  vertical-align: top;
+  text-align: justify;
 }
 
 /*css Variables prefix*/

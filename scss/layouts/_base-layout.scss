@@ -44,7 +44,6 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
     &-footer {
         display: flex;
         position: relative;
-        margin-top: 20vh;
         align-items: center;
         padding: 32px 16px;
         font-size: 16px;
@@ -64,6 +63,7 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
             gap: 15px;
             left: 120vh;
             bottom: 0px;
+
             align-items: center;
             justify-content: right;
             text-decoration: none;
@@ -74,6 +74,7 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
         li a {
             text-decoration: none;
             font-size: 16px;
+
         }
 
     }
@@ -83,6 +84,16 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
         height: 350px;
         margin-top: 10vh;
         z-index: 9000;
+
+        h2 {
+            text-align: center;
+            color: #FFFF;
+        }
+    }
+
+    &-socialmedia {
+        background-color: $color-blue-600;
+
     }
 }
 

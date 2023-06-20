@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 /*INDEX*/
 .user_bg {
     height: 22px;
@@ -27,10 +29,7 @@ body {
         }
 
         .base-contact-form {
-            h2 {
-                text-align: center;
-                color: #FFFF;
-            }
+
 
             .col-auto {
                 display: flex;
@@ -54,6 +53,8 @@ body {
 
         .base-partners {
             align-items: center;
+            height: 300px;
+            margin-top: 10vh;
 
             .container-fluid {
                 .d-flex {
@@ -63,6 +64,73 @@ body {
                 .partners_images {
                     height: 160px;
                     width: 150px;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .base-socialmedia {
+            .reds {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 15px;
+                    bottom: 0px;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    position: relative;
+
+                }
+
+                li a {
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                li img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+
+        .base-experience {
+            position: relative;
+            justify-content: center;
+
+            .experiences {
+                display: inline-block;
+                background-color: $color-slate-200;
+                width: 300px;
+                margin: 10px 10px 10px 10px;
+
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 40px;
+                    float: left;
+
+                    p {
+                        display: flex;
+                        text-align: center;
+                        font-size: 7px;
+                        margin-left: 60px;
+
+
+                    }
+                }
+
+                .instagram_log {
+                    height: 25px;
+                    width: 25px;
+                }
+
+                p {
+                    display: flex;
+                    vertical-align: top;
+                    text-align: justify;
                 }
             }
         }
