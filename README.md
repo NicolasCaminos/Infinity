@@ -88,7 +88,7 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <h2>V2.19.6</h2></p>
 <br>
 
-<a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert" width="40" height="40"/> </a> <h2>v11.7.12 6</h2></p>
+<a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert" width="90" height="40"/> </a> <h2>v11.7.12 6</h2></p>
 <br>
 
 ---
