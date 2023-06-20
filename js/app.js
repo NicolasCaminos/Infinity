@@ -42,21 +42,11 @@ function saludo() {
     }
 
 }
-
 class Carrito {
     constructor() {
         this.productos = [];
         this.total = 0;
     }
-
-    // Ejemplo ultra-facha para saber si un producto está en el array.
-    // find() devuelve el primer elemento que encuentra, de lo contrario
-    // devuelve undefined
-    // enCarrito(nuevoProducto) {
-    //   return this.productos.find(
-    //     (producto) => producto.nombre == nuevoProducto.nombre
-    //   );
-    // }
 
     enCarrito(nuevoProducto) {
         return this.productos.find((producto) => {
@@ -165,7 +155,7 @@ function agregarProducto() {
     // Precio
     let precio = prompt("Introduzca el precio del producto");
     // Validación
-    if (precio == "" || parseInt(precio) <= 0) {
+    if (precio == "" || parseFloat(precio) <= 0) {
         alert("El precio ingresado es inválido, ingrese los datos de nuevo.");
         return;
     }
@@ -173,9 +163,9 @@ function agregarProducto() {
     // Creo un objeto con los datos obtenidos del prompt
     const nuevoProducto = {
         nombre: nombre,
-        precio: parseInt(precio),
+        precio: parseFloat(precio),
         cantidad: 1,
-        subtotal: parseInt(precio),
+        subtotal: parseFloat(precio),
     };
 
     // Llamo al método agregar del carrito y le paso el objeto del producto
