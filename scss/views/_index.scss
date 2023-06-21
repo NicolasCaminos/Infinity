@@ -33,7 +33,7 @@ body {
 
             .col-auto {
                 display: flex;
-                background-color: #FFFF !important;
+                background-color: $color-slate-50 !important;
                 width: 600px !important;
                 height: 100px;
                 position: relative !important;
@@ -96,15 +96,22 @@ body {
         }
 
         .base-experience {
-            position: relative;
-            justify-content: center;
 
-            .experiences {
+            gap: 60px;
+
+            :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) {
                 display: inline-block;
+                position: relative;
+                justify-content: center;
                 background-color: $color-slate-200;
                 width: 300px;
-                margin: 10px 10px 10px 10px;
-
+                height: 300px;
+                margin-left: 60px;
+                margin-top: 60px;
+                border-color: $color-slate-600 ;
+                border-width: 2px 2px 2px;
+                border-style: solid solid solid;
+                grid-template-columns: 33.3% 33.3% 33.3%;
 
                 img {
                     width: 70px;
@@ -117,8 +124,6 @@ body {
                         text-align: center;
                         font-size: 7px;
                         margin-left: 60px;
-
-
                     }
                 }
 
@@ -131,6 +136,98 @@ body {
                     display: flex;
                     vertical-align: top;
                     text-align: justify;
+                }
+            }
+
+        }
+
+        .base-elegirnos {
+            :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
+                display: inline-block;
+                position: relative;
+                justify-content: center;
+                width: 300px;
+                height: 380px;
+                margin-left: 60px;
+                margin-top: 60px;
+                border-color: $color-slate-600 ;
+                border-width: 2px 2px 2px;
+                border-style: solid solid solid;
+                border-radius: 50px;
+
+                p {
+                    font-size: 20px;
+                }
+
+                img {
+
+                    height: 280px;
+                    width: 180px;
+                    margin-left: 20%;
+                }
+            }
+
+            .elijen2 {
+                background-color: $color-orange;
+
+                p {
+                    color: $color-slate-50;
+                }
+            }
+
+            .elijen4 {
+                background-color: $color-blue-600;
+
+                p {
+                    color: $color-slate-50;
+                }
+            }
+
+            .elijen5 {
+                background-color: $color-orange;
+
+                p {
+                    color: $color-slate-50;
+                }
+            }
+
+            .elijen7 {
+                background-color: $color-blue-600;
+
+                p {
+                    color: $color-slate-50;
+                }
+            }
+        }
+
+        .base-geolocali-form {
+            background-color: $color-blue-600;
+            height: 400px;
+                    position: relative;
+            h2 {
+                color: $color-slate-50;
+            }
+
+            iframe {
+                position: absolute;
+                align-items: center;
+                height: 300px;
+                width: 400px;
+                margin-left: 15%;
+                margin-top: 5%;
+                background-color: $color-slate-50;
+                border-color: $color-slate-950;
+                border-width: 2px 2px 2px;
+                border-style: solid solid solid;
+                border-radius: 20px;
+            }
+
+            .datos {
+                position: static;
+                margin-left: 50%;
+                p {
+
+                    color: $color-slate-50;
                 }
             }
         }
