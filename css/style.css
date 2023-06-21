@@ -293,7 +293,7 @@ p-last-child {
 .base-footer li a {
   text-decoration: none;
   font-size: 16px;
-  color: white;
+  color: var(--prefix-header-border-color, #cbd5e1);
 }
 .base-contact-form {
   background-color: #478AC9;
@@ -316,11 +316,11 @@ p-last-child {
     position: relative;
     width: 100%;
     height: 20vh;
-    top: 20vh;
+    top: 0vh;
     font-size: 15px;
   }
   footer ul {
-    left: 15vh !important;
+    left: 1vh !important;
     list-style: none;
     gap: 15px;
     justify-content: right;
@@ -871,6 +871,17 @@ body main .base-elegirnos .elijen7 {
 body main .base-elegirnos .elijen7 p {
   color: #FFF;
 }
+body main .whatsappbutton {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  float: left;
+}
+body main .whatsappbutton img {
+  display: grid;
+  z-index: 9000;
+  position: fixed;
+}
 body main .base-geolocali-form {
   background-color: #478AC9;
   height: 400px;
@@ -900,6 +911,149 @@ body main .base-geolocali-form .datos p {
   color: #FFF;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  body main .row {
+    margin-top: 10vh;
+  }
+  body main .card {
+    text-align: justify;
+  }
+  body main .card img {
+    height: 180px;
+    width: 180px;
+  }
+  body main .base-partners {
+    align-items: center;
+    height: 900px;
+    margin-top: 10vh;
+    display: block !important;
+  }
+  body main .base-partners .container-fluid .d-flex {
+    gap: 10px;
+  }
+  body main .base-partners .container-fluid .partners_images {
+    height: 160px;
+    width: 150px;
+  }
+  body main .base-contact-form .col-auto {
+    display: block;
+    background-color: #FFF !important;
+    width: 90% !important;
+    height: 200px;
+    position: relative !important;
+    left: 1%;
+    margin-top: 20px;
+    padding: 10 0 0 0;
+    border-radius: 30px;
+    gap: 10px !important;
+  }
+  body main .base-contact-form .col-auto .mb-3 {
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    align-content: center !important;
+  }
+  body main .base-experience {
+    gap: 60px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    background-color: #e2e8f0;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) img {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    float: left;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) img p {
+    display: flex;
+    width: 10%;
+    text-align: center;
+    font-size: 7px;
+    margin-left: 60px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) .instagram_log {
+    height: 25px;
+    width: 25px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) p {
+    display: flex;
+    vertical-align: top;
+    text-align: justify;
+  }
+  body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
+    width: 50%;
+    height: 50%;
+    margin-left: 40px;
+  }
+  body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) p {
+    font-size: 15px;
+  }
+  body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) img {
+    height: 50%;
+    width: 50%;
+    margin-left: 20%;
+  }
+  body main .whatsappbutton {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    float: left;
+  }
+  body main .whatsappbutton img {
+    display: grid;
+    z-index: 9000;
+    position: fixed;
+  }
+  body main .base-geolocali-form {
+    height: 40%;
+    position: relative;
+  }
+  body main .base-geolocali-form iframe {
+    height: 50%;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 25%;
+  }
+  body main .base-geolocali-form .datos {
+    position: static;
+    margin-left: 50%;
+    max-width: 20%;
+  }
+  body main .base-geolocali-form .datos p {
+    display: flex word-break;
+    margin-bottom: 10%;
+    font-size: 10px;
+    color: #FFF;
+  }
+}
+/* */
+@media only screen and (min-width: 768px) and (max-width: 975px) {
+  footer {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    top: 20vh;
+    font-size: 15px;
+  }
+  footer ul {
+    position: relative;
+    left: 35vh !important;
+    list-style: none;
+    gap: 15px;
+    justify-content: right;
+    text-decoration: none;
+  }
+  footer ul li a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+}
 /*css Variables prefix*/
 /*font family*/
 /*font sizes*/

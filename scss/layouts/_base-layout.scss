@@ -50,12 +50,10 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
         font-weight: 400;
         bottom: 0;
         background-color: $footer-bg-color;
-
         p {
             color: $footer-text-color;
             display: flex
         }
-
         ul {
             text-align: right;
             display: flex;
@@ -70,14 +68,11 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
             position: relative;
 
         }
-
         li a {
             text-decoration: none;
             font-size: 16px;
-            color: #FFFF;
-
+            color:$footer-text-color;
         }
-
     }
 
     &-contact-form {
@@ -92,9 +87,6 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
         }
     }
 
-
-
-
     #base-footer-addPro {
         position: relative;
         top: 40vh;
@@ -107,11 +99,11 @@ $footer-text-color: var(--#{prefix}-header-border-color, $color-slate-300);
         position: relative;
         width: 100%;
         height: 20vh;
-        top: 20vh;
+        top: 0vh;
         font-size: 15px;
 
         ul {
-            left: 15vh !important;
+            left: 1vh !important;
             list-style: none;
             gap: 15px;
             justify-content: right;
