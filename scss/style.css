@@ -740,18 +740,6 @@ body main .card img {
   height: 180px;
   width: 180px;
 }
-body main .base-app {
-  margin-top: 5vh;
-}
-body main .base-app .btn {
-  margin-left: 40%;
-  height: 50px;
-  width: 180px;
-  border-radius: 30px !important;
-  border-color: #FFCA2C;
-  border-width: 2px 2px 2px;
-  border-style: solid solid solid;
-}
 body main .base-contact-form .col-auto {
   display: flex;
   background-color: #FFF !important;
@@ -923,7 +911,7 @@ body main .base-geolocali-form .datos p {
   color: #FFF;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 770px) {
+@media only screen and (min-width: 360px) and (max-width: 576px) {
   body main .row {
     margin-top: 10vh;
   }
@@ -946,6 +934,9 @@ body main .base-geolocali-form .datos p {
   body main .base-partners .container-fluid .partners_images {
     height: 160px;
     width: 150px;
+  }
+  body main .base-contact-form {
+    max-width: fit-content;
   }
   body main .base-contact-form .col-auto {
     display: block;
@@ -1068,6 +1059,9 @@ body main .base-geolocali-form .datos p {
   body main .base-partners .container-fluid .partners_images {
     height: 160px;
     width: 150px;
+  }
+  body main .base-contact-form {
+    max-width: fit-content;
   }
   body main .base-contact-form .col-auto {
     display: block;

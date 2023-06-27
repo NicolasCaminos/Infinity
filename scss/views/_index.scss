@@ -28,6 +28,20 @@ body {
             }
         }
 
+        .base-app {
+            margin-top: 5vh;
+
+            .btn {
+                margin-left: 40%;
+                height: 50px;
+                width: 180px;
+                border-radius: 30px !important;
+                border-color: $color-orange;
+                border-width: 2px 2px 2px;
+                border-style: solid solid solid;
+            }
+        }
+
         .base-contact-form {
 
 
@@ -250,7 +264,7 @@ body {
 
 }
 
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 770px) {
     body {
         & main {
             & .row {
@@ -288,7 +302,7 @@ body {
                 .col-auto {
                     display: block;
                     background-color: $color-slate-50 !important;
-                    width: 90%!important;
+                    width: 90% !important;
                     height: 200px;
                     position: relative !important;
                     left: 1%;
@@ -304,7 +318,6 @@ body {
                     }
                 }
             }
-
             .base-experience {
 
                 gap: 60px;
@@ -344,17 +357,13 @@ body {
                         text-align: justify;
                     }
                 }
-
             }
 
             .base-elegirnos {
                 :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
-
                     width: 50%;
                     height: 50%;
                     margin-left: 40px;
-
-
                     p {
                         font-size: 15px;
                     }
@@ -397,6 +406,7 @@ body {
                     position: static;
                     margin-left: 50%;
                     max-width: 20%;
+
                     p {
                         display: flex word-break;
                         margin-bottom: 10%;
@@ -411,28 +421,86 @@ body {
 }
 
 /* */
-@media only screen and (min-width: 768px) and (max-width: 975px) {
-    footer {
-        position: relative;
-        width: 100%;
-        height: 20vh;
-        top: 20vh;
-        font-size: 15px;
+@media screen and (min-width: 768px) and (max-width: 975px) {
+    body {
+        & main {
+            & .row {
+                margin-top: 10vh;
+            }
 
-        ul {
-            position: relative;
-            left: 35vh !important;
-            list-style: none;
-            gap: 15px;
-            justify-content: right;
-            text-decoration: none;
+            .card {
+                text-align: justify;
 
-            li a {
-                text-decoration: none;
-                font-size: 15px;
+                img {
+                    height: 180px;
+                    width: 180px;
+                }
+            }
+
+            .base-partners {
+                align-items: center;
+                height: 900px;
+                margin-top: 10vh;
+                display: block !important;
+
+                .container-fluid {
+                    .d-flex {
+                        gap: 10px;
+                    }
+
+                    .partners_images {
+                        height: 160px;
+                        width: 150px;
+                    }
+                }
+            }
+
+            .base-contact-form {
+                .col-auto {
+                    display: block;
+                    background-color: $color-slate-50 !important;
+                    width: 90% !important;
+                    height: 200px;
+                    position: relative !important;
+                    left: 1%;
+                    margin-top: 20px;
+                    padding: 10 0 0 0;
+                    border-radius: 30px;
+                    gap: 10px !important;
+
+                    .mb-3 {
+                        margin-top: 10px !important;
+                        border-radius: 10px !important;
+                        align-content: center !important;
+                    }
+                }
+            }
+
+            .base-geolocali-form {
+                top: 20vh !important;
+                position: relative;
+
+                iframe {
+                    top: 10vh;
+                    right: 60%;
+                    width: 300px;
+                }
+
+                .datos {
+                    position: static;
+                    width: 200px;
+
+                    p {
+                        font-size: 10px;
+                        color: $color-slate-50;
+                    }
+                }
             }
         }
+
     }
 
-
 }
+
+/* // X-Large devices (large desktops, 1200px and up)*/
+@media only screen and (min-width: 1400px) {}

@@ -84,6 +84,7 @@
     scroll-behavior: smooth;
   }
 }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -115,39 +116,39 @@ h6, h5, h4, h3, h2, h1 {
 h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
-
 @media (min-width: 1200px) {
   h1 {
     font-size: 2.5rem;
   }
 }
+
 h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
-
 @media (min-width: 1200px) {
   h2 {
     font-size: 2rem;
   }
 }
+
 h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
-
 @media (min-width: 1200px) {
   h3 {
     font-size: 1.75rem;
   }
 }
+
 h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
-
 @media (min-width: 1200px) {
   h4 {
     font-size: 1.5rem;
   }
 }
+
 h5 {
   font-size: 1.25rem;
 }
@@ -239,7 +240,6 @@ a {
   color: var(--bs-link-color);
   text-decoration: underline;
 }
-
 a:hover {
   color: var(--bs-link-hover-color);
 }
@@ -264,7 +264,6 @@ pre {
   overflow: auto;
   font-size: 0.875em;
 }
-
 pre code {
   font-size: inherit;
   color: inherit;
@@ -276,7 +275,6 @@ code {
   color: var(--bs-code-color);
   word-wrap: break-word;
 }
-
 a > code {
   color: inherit;
 }
@@ -288,7 +286,6 @@ kbd {
   background-color: var(--bs-body-color);
   border-radius: 0.25rem;
 }
-
 kbd kbd {
   padding: 0;
   font-size: 1em;
@@ -366,7 +363,6 @@ select {
 select {
   word-wrap: normal;
 }
-
 select:disabled {
   opacity: 1;
 }
@@ -381,7 +377,6 @@ button,
 [type=submit] {
   -webkit-appearance: button;
 }
-
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -413,7 +408,6 @@ legend {
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
-
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
@@ -483,7 +477,5 @@ progress {
 [hidden] {
   display: none !important;
 }
-
-
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
