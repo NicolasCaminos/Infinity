@@ -724,6 +724,14 @@ p-last-child {
   width: 22px;
 }
 
+#chart {
+  margin-right: 15px;
+}
+#chart .user-chart {
+  height: 22px;
+  width: 22px;
+}
+
 .logo_Infinity {
   height: 80px;
   width: 80px;

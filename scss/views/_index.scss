@@ -7,6 +7,14 @@
 
 }
 
+#chart {
+        margin-right: 15px;
+        .user-chart {
+            height: 22px;
+            width: 22px;
+        }
+}
+
 .logo_Infinity {
     height: 80px;
     width: 80px;
@@ -318,6 +326,7 @@ body {
                     }
                 }
             }
+
             .base-experience {
 
                 gap: 60px;
@@ -364,6 +373,7 @@ body {
                     width: 50%;
                     height: 50%;
                     margin-left: 40px;
+
                     p {
                         font-size: 15px;
                     }

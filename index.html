@@ -2,22 +2,29 @@
 <html lang="en">
 
 <head>
+    <!-- CHARSET -->
     <meta charset="UTF-8">
+    <!-- VIEWPORT -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link CSS Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- TITULO -->
     <title>Infinity</title>
 </head>
 
 <body onload="saludo();">
+    <!-- HEADER -->
     <header class="base-header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -36,11 +43,11 @@
                     </ul>
                     <form class="d-flex">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <img class="user_bg" src="img/user_bg.png" class="" alt="" srcset="">
+                            <li class="nav-item" id="chart">
+                                <img class="user-chart" src="img/orden.png" class="" alt="" srcset="">
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="user" href="#"></a>
+                                <img class="user_bg" src="img/user_bg.png" class="" alt="" srcset="">
                             </li>
                         </ul>
                     </form>
@@ -48,8 +55,9 @@
             </div>
         </nav>
     </header>
+    <!-- MAIN -->
     <main class="base-content">
-
+        <!-- CARRUSEL-->
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -70,18 +78,19 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <section class="base-app">
-                <button class="btn btn-primary" class="btnTienda">Ir a la tienda </button>
-            </section>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            <!-- Acceso a Tienda -->
+            <section class="base-app">
+                <button class="btn btn-primary" class="btnTienda">Ir a la tienda </button>
+            </section>
         </div>
-
+        <!-- PRODUCTOS -->
         <div class="textcard">
-            <h2 class="u-align-center u-text u-text-1">Algunos de nuestros productos</h2>
+        <h2 class="u-align-center u-text u-text-1">Algunos de nuestros productos</h2>
         </div>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -125,6 +134,7 @@
                 </div>
             </div>
         </div>
+        <!-- ELEGIRNOS -->
         <section class="base-elegirnos">
             <div class="row">
                 <h2 class="u-align-center u-text u-text-1">Datos que nos avalan</h2>
@@ -158,6 +168,7 @@
                                     </div>
                                 </div>
         </section>
+        <!-- EXPERIENCIAS -->
         <section class=" base-experience">
                     <h2 class="u-align-center u-text u-text-1">Compartimos nuestras experiencias</h2>
                     <div class="row">
@@ -255,9 +266,7 @@
                     </div>
 
         </section>
-        <div class="whatsappbutton">
-            <img src="img/whatsapp mobile software icon_8704828.png" alt="">
-        </div>
+        <!-- CONTACTO -->
         <section class="base-contact-form">
 
             <form class="row">
@@ -278,6 +287,7 @@
                 </div>
             </form>
         </section>
+        <!-- MARCAS -->
         <section class="base-partners">
             <div class="contenedor">
                 <h2 class="u-align-center u-text u-text-1">Algunas de nuestras marcas oficiales</h2>
@@ -327,6 +337,7 @@
                             </div>
                         </div>
         </section>
+        <!-- LOCALIZACIóN -->
         <section class="base-geolocali-form">
             <form class="row">
                 <h2>Nuestra ubicación</h2>
