@@ -19,11 +19,6 @@ $header-bg-color: var(--#{prefix}-header-bg-color, $color-slate-100);
         }
     }
 
-    #offcanvasRight {
-        background-color: #0f172a !important;
-        color: $color-slate-50 !important;
-    }
-
     .embed-iframe-items::-webkit-scrollbar-thumb {
         background-color: $color-slate-50;
 
