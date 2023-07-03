@@ -1,31 +1,49 @@
 $header-bg-color: var(--#{prefix}-header-bg-color, $color-slate-100);
+
 [data-theme='dark'] {
     color-scheme: dark;
     --#{$prefix}-body-bg-color: #0f172a;
-    --#{$prefix}-body-text-color: #FFFFFF;
-    --#{$prefix}-heading-text-color: #FFFFFF;
+    --#{$prefix}-body-text-color: $color-slate-50;
+    --#{$prefix}-heading-text-color: $color-slate-50;
 
-    #navbar_oasis {
+    .navbar {
         background-color: #0f172a !important;
-        color: #FFFFFF !important;
+        color: $color-slate-50 !important;
 
         .navbar-toggler {
-            background-color: #FFFFFF !important;
+            background-color: $color-slate-50 !important;
         }
 
         & li a {
-            color: #FFFFFF !important;
+            color: $color-slate-50 !important;
         }
     }
 
+    #offcanvasRight {
+        background-color: #0f172a !important;
+        color: $color-slate-50 !important;
+    }
+
     .embed-iframe-items::-webkit-scrollbar-thumb {
-        background-color: #FFFFFF;
-        
-            border-radius: 10px;
+        background-color: $color-slate-50;
+
+        border-radius: 10px;
+    }
+
+    a {
+        color: $color-slate-50 !important;
+    }
+
+    .card {
+
+        :is(h5, p) {
+            color: $color-slate-700;
         }
-        
-        a {
-            color: #FFFFFF !important;
+    }
+
+    .base-experience {
+        p {
+            color: $color-slate-700;
         }
-        
+    }
 }

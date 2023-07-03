@@ -7,6 +7,7 @@
     <!-- VIEWPORT -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <script src="../js/darkmode.js" type="text/javascript" defer></script>
     <!-- Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -40,11 +41,35 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                        </li>
                     </ul>
                     <form class="d-flex">
+                        <p id="items" class="bi bi-brightness-alt-high"></p>
+                        <div class="form-check form-switch">
+                            <input title="checkbox-datascheme" class="form-check-input" type="checkbox" role="switch"
+                                id="slider">
+                        </div>
+                        <p id="items" class="bi bi-moon-fill"></p>
+                    </form>
+                    <form class="d-flex">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item" id="chart">
-                                <img class="user-chart" src="img/orden.png" class="" alt="" srcset="">
+                            <li class="nav-item" id="chart" type="button" data-bs-scroll="true"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"><img class="user-chart" src="img/orden.png" class=""
+                                    alt="" srcset="">
+                                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                                    id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Comprados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        ...
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <img class="user_bg" src="img/user_bg.png" class="" alt="" srcset="">
@@ -56,7 +81,9 @@
         </nav>
     </header>
     <!-- MAIN -->
+
     <main class="base-content">
+
         <!-- CARRUSEL-->
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
@@ -88,9 +115,10 @@
                 <button class="btn btn-primary" class="btnTienda">Ir a la tienda </button>
             </section>
         </div>
+
         <!-- PRODUCTOS -->
         <div class="textcard">
-        <h2 class="u-align-center u-text u-text-1">Algunos de nuestros productos</h2>
+            <h2 class="u-align-center u-text u-text-1">Algunos de nuestros productos</h2>
         </div>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -100,6 +128,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Pc Armada Dual Core Amd 8gb Ssd 240gb Wifi Hdmi 550w</h5>
                         <p class="card-text">$97.990</p>
+                        <button class="btn btn-primary" class="btnTienda">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -110,6 +139,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 240</h5>
                         <p class="card-text">$209.999</p>
+                        <button class="btn btn-primary" class="btnTienda">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -120,6 +150,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 240</h5>
                         <p class="card-text">$147.999</p>
+                        <button class="btn btn-primary" class="btnTienda">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -130,6 +161,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480</h5>
                         <p class="card-text">$294.499,05</p>
+                        <button class="btn btn-primary" class="btnTienda">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -168,6 +200,7 @@
                                     </div>
                                 </div>
         </section>
+
         <!-- EXPERIENCIAS -->
         <section class=" base-experience">
                     <h2 class="u-align-center u-text u-text-1">Compartimos nuestras experiencias</h2>

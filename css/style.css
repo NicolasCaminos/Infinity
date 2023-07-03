@@ -37,7 +37,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
 :root {
-  color-scheme: "light";
+  color-scheme: light;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -77,25 +77,31 @@ body header {
 [data-theme=dark] {
   color-scheme: dark;
   --oasis-body-bg-color: #0f172a;
-  --oasis-body-text-color: #FFFFFF;
-  --oasis-heading-text-color: #FFFFFF;
+  --oasis-body-text-color:$color-slate-50;
+  --oasis-heading-text-color:$color-slate-50;
 }
-[data-theme=dark] #navbar_oasis {
+[data-theme=dark] .navbar {
   background-color: #0f172a !important;
-  color: #FFFFFF !important;
+  color: #FFF !important;
 }
-[data-theme=dark] #navbar_oasis .navbar-toggler {
-  background-color: #FFFFFF !important;
+[data-theme=dark] .navbar .navbar-toggler {
+  background-color: #FFF !important;
 }
-[data-theme=dark] #navbar_oasis li a {
-  color: #FFFFFF !important;
+[data-theme=dark] .navbar li a {
+  color: #FFF !important;
 }
 [data-theme=dark] .embed-iframe-items::-webkit-scrollbar-thumb {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 10px;
 }
 [data-theme=dark] a {
-  color: #FFFFFF !important;
+  color: #FFF !important;
+}
+[data-theme=dark] .card :is(h5, p) {
+  color: #334155;
+}
+[data-theme=dark] .base-experience p {
+  color: #334155;
 }
 
 /*Hystory*/ /*css Variables prefix*/
@@ -744,9 +750,22 @@ body main .row {
 body main .card {
   text-align: justify;
 }
+body main .card .btn {
+  display: none;
+}
 body main .card img {
   height: 180px;
   width: 180px;
+}
+body main .card:hover {
+  box-shadow: 0px 0px 5px 1px grey;
+  height: 400px;
+  transition-property: height;
+  transition-duration: 15s;
+}
+body main .card:hover .btn {
+  margin-top: 50px;
+  display: block;
 }
 body main .base-app {
   margin-top: 5vh;
