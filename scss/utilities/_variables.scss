@@ -1,5 +1,5 @@
 /*css Variables prefix*/
-$prefix: 'oasis' !default;
+$prefix: 'infinity' !default;
 
 $breakpoints: (
     sm:576px,
@@ -125,7 +125,7 @@ $font-secondary: var(--#{$prefix}-font-secondary, $font-sans) !default;
 $font-size-base: var(--#{$prefix}-font-size-base, $font-md) !default;
 $font-weigth-base: var(--#{$prefix}-font-weigth-base, $font-normal) !default;
 $line-height-base: var(--#{$prefix}-line-height-base, $leading-normal) !default;
-
 $body-bg-color: var(--#{$prefix}-body-bg-color, $color-slate-100) !default;
 $body-text-color: var(--#{$prefix}-body-text-color, $color-slate-500) !default;
 $heading-text-color: var(--#{$prefix}-heading-text-color, $color-slate-700) !default;
+$body-bg-darkmode-color: var(--#{$prefix}-body-bg-color, $color-orange) !default;

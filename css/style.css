@@ -49,11 +49,11 @@ body {
   -moz-osx-fontt-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -webkit-top-highlight-color: transparent;
-  color: var(--oasis-body-text-color, #64748b) !important;
-  line-height: var(--oasis-line-height-base, 1.5);
-  font-weight: var(--oasis-font-weigth-base, 400);
-  background-color: var(--oasis-body-bg-color, #f1f5f9) !important;
-  font-family: var(--oasis-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  color: var(--infinity-body-text-color, #64748b) !important;
+  line-height: var(--infinity-line-height-base, 1.5);
+  font-weight: var(--infinity-font-weigth-base, 400);
+  background-color: var(--infinity-body-bg-color, #f1f5f9) !important;
+  font-family: var(--infinity-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
 }
 body body::-webkit-scrollbar {
   width: 10px;
@@ -71,17 +71,17 @@ body img {
   max-width: 100%;
 }
 body header {
-  color: var(--oasis-body-bg-color, #f1f5f9);
+  color: var(--infinity-body-bg-color, #f1f5f9);
 }
 
 [data-theme=dark] {
   color-scheme: dark;
-  --oasis-body-bg-color: #0f172a;
-  --oasis-body-text-color:$color-slate-50;
-  --oasis-heading-text-color:$color-slate-50;
+  --infinity-body-bg-color: #334155;
+  --infinity-body-text-color: $color-slate-50;
+  --infinity-heading-text-color: $color-slate-50;
 }
 [data-theme=dark] .navbar {
-  background-color: #0f172a !important;
+  background-color: #334155 !important;
   color: #FFF !important;
 }
 [data-theme=dark] .navbar .navbar-toggler {
@@ -97,8 +97,14 @@ body header {
 [data-theme=dark] a {
   color: #FFF !important;
 }
+[data-theme=dark] .card {
+  box-shadow: 0px 0px 5px 1px #FFF;
+}
 [data-theme=dark] .card :is(h5, p) {
   color: #334155;
+}
+[data-theme=dark] .card:hover {
+  border-color: aqua;
 }
 [data-theme=dark] .base-experience p {
   color: #334155;
@@ -127,10 +133,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--oasis-heading-text-color, #334155);
+  color: var(--infinity-heading-text-color, #334155);
   font-weight: 500;
   line-height: 1.25;
-  font-family: var(--oasis-font-secondary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-family: var(--infinity-font-secondary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
 }
 h1-first-child,
 h2-first-child,
@@ -180,7 +186,7 @@ h6 {
 }
 
 p {
-  color: var(--oasis-body-text-color, #64748b);
+  color: var(--infinity-body-text-color, #64748b);
   margin: 16px 0;
   font-weight: 1.5;
 }
@@ -725,11 +731,6 @@ p-last-child {
 /*COLORS*/
 /*THEME GLOBAL VALUES*/
 /*INDEX*/
-.user_bg {
-  height: 22px;
-  width: 22px;
-}
-
 #chart {
   margin-right: 15px;
 }

@@ -1,12 +1,5 @@
-//VARIABLES
-const iva = 0.21;
-//CLASES
-const products = {
-    product: "",
-    file: "",
-    price: ""
-}
-
+//RENDERIZADOS
+const divProductos = document.getElementById('productos');
 // Bienevenida
 function saludo() {
     Swal.fire(
@@ -43,153 +36,75 @@ function saludo() {
 
 }
 
-// COMENZAMOS PROYECTO DE CARRITO
-class Carrito {
+// COMENZAMOS PROYECTO
+
+//CREAMOS LA CLASE DE LA DB SIMULADA
+class DbCarrito {
     constructor() {
         this.productos = [];
-        this.total = 0;
+        //CARGAMOS PRODUCTOS
+        this.addProducts(1, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 24', 99.992, "https://http2.mlstatic.com/D_NQ_NP_987277-MLA47399516891_092021-O.webp");
+        this.addProducts(2, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 240', 213.972, "https://http2.mlstatic.com/D_NQ_NP_2X_736468-MLA54339629438_032023-F.webp");
+        this.addProducts(3, 'Pc Armada Pro Intel 3.6ghz Dual Core Ssd 240 Ram 8gb Ddr4', 147.999, "https://http2.mlstatic.com/D_NQ_NP_2X_832597-MLA53084402117_122022-F.webp");
+        this.addProducts(4, 'Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480', 294.499, "https://http2.mlstatic.com/D_NQ_NP_2X_884368-MLA53087339003_122022-F.webp");
+        this.addProducts(5, 'Nootebook Asus X515EA slate gray 15.6", Intel Core i5 1135G7 8GB de RAM 256GB SSD, Intel Iris Xe Graphics G7 80EUs 1920x1080px', 355.799, "https://http2.mlstatic.com/D_NQ_NP_2X_908593-MLA49420869607_032022-F.webp");
+        this.addProducts(6, 'Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480', 32.102, "https://http2.mlstatic.com/D_NQ_NP_2X_741824-MLA41898051260_052020-F.webp");
+        this.addProducts(7, 'Disco sólido interno Crucial CT1000BX500SSD1 1TB', 94.499, "https://http2.mlstatic.com/D_NQ_NP_2X_741824-MLA41898051260_052020-F.webp");
+        this.addProducts(8, 'Disco Solido Ssd 1tb M.2 Kingston Snv2s/1000g Nvme Pcie 4.0', 30.501, "https://http2.mlstatic.com/D_NQ_NP_2X_830625-MLA52062909392_102022-F.webp");
+        this.addProducts(9, 'Notebook Asus Zenbook 14 Amd Ryzen 7-5825u 8 Gb Ram 512 Gb Ssd Jade Negro Windows 11', 649.872, "https://http2.mlstatic.com/D_NQ_NP_2X_731490-MLA54202850371_032023-F.webp");
+        this.addProducts(10, 'Notebook Asus Amd R5-5600h 16gb 512g Win11', 560.999, "https://http2.mlstatic.com/D_NQ_NP_2X_970053-MLU69515847455_052023-F.webp");
+        this.addProducts(11, 'Notebook Lenovo Ideapad 1i Intel I3 1215u 4gb Ram (ampliable Hasta 12gb) 128gb Ssd Windows 11s', 204.999, "https://http2.mlstatic.com/D_NQ_NP_2X_787180-MLA54518190876_032023-F.webp");
+        this.addProducts(13, 'Cable Red Utp Rj45 20 Mts Metros Categoria 5e Internet Patch', 1.449, "https://http2.mlstatic.com/D_NQ_NP_2X_833286-MLA44286952343_122020-F.webp");
+        this.addProducts(13, 'Disco sólido interno Kingston SA400S37 / 480G 480GB negro', 16.424, "https://http2.mlstatic.com/D_NQ_NP_2X_751939-MLA46221843872_052021-F.webp");
+
+
     }
 
-    enCarrito(nuevoProducto) {
-        return this.productos.find((producto) => {
-            if (producto.nombre == nuevoProducto.nombre && producto.precio == nuevoProducto.precio) {
-                return true;
-            }
-            return false;
-        });
+    //ESTE METODO SIMULARA LA INSERCION DE LOS REGISTROS
+    addProducts(id, nombre, precio, imagen) {
+        const producto = new Producto(id, nombre, precio, imagen);
+        this.productos.push(producto)
     }
-
-    // Agregar al carrito
-    agregar(nuevoProducto) {
-        // Si encuentra algún producto, lo guardo en una variable
-        let productoEncontrado = this.enCarrito(nuevoProducto);
-        if (productoEncontrado) {
-            // Con el producto en una variable, puedo sumarle directamente
-            // la cantidad y multiplicar su precio
-            productoEncontrado.cantidad += 1;
-            productoEncontrado.precio = nuevoProducto.precio * iva + nuevoProducto.precio;
-            productoEncontrado.subtotal = nuevoProducto.precio * productoEncontrado.cantidad;
-        } else {
-            // Si no está en el carrito, lo agrego al array.
-            this.productos.push(nuevoProducto);
-            alert("El producto " + nuevoProducto.nombre + " fue agregado al carrito.");
-        }
-        // Muestro la lista de productos llamando al método listar
-        this.listar();
+    //ESTE MÉTODO TRAE TODOS LOS PRODUCTOS CARGADOS EN EL ARRAY
+    sproducts() {
+        return this.productos;
     }
-
-    // Muestro la lista de productos en consola
-    listar() {
-        console.clear(); // Limpia consola
-        console.log("Mis productos en el carrito:");
-        // Variante usando forEach en vez de el clásico for
-        this.productos.forEach((producto) => {
-            console.log("------");
-            console.log("Nombre: " + producto.nombre);
-            console.log("Precio: " + producto.precio);
-            console.log("Cantidad: " + producto.cantidad);
-            console.log("Subtotal: " + producto.subtotal);
-        });
-
-        // Uso la el método reduce para sumar el total de los productos
-        this.total = this.productos.reduce(
-            (acumulador, producto) => acumulador + producto.precio * producto.cantidad,
-            0
-        );
-        console.log("------");
-        console.log("TOTAL DEl CARRITO: $" + this.total);
-    }
-
-    // Remueve un producto del carrito
-    quitar(producto) {
-        // Abstracción: readapto y reutilzo código de una solución
-        // previa (método enCarrito)
-        let productoEncontrado = this.enCarrito(producto);
-        if (productoEncontrado) {
-            // Obtengo el índice
-            let indice = this.productos.indexOf(productoEncontrado);
-            this.productos.splice(indice, 1); // Lo vuelo con splice
-            alert("El producto " + producto.nombre + " fue borrado del carrito");
-            this.listar();
-        }
-    }
-
-    // Buscador con filter e includes en una sola línea (is majeco)
-    buscar(nombreProducto) {
-        // El filter devuelve un array con los resultados encontrados
-        // y en caso de no encontrar nada, devuelve un array vacío []
-        let resultado = this.productos.filter((producto) =>
-            // El método includes en un string se fija si esa palabra
-            // esta incluída en el string, si está devuelve true, sino false
-            // Al devolver true, filter lo guarda en el array, sino lo ignora
-            producto.nombre.includes(nombreProducto)
-        );
-        // Muestro consola (estoy repitiendo código del método this.listar
-        // se podría optimizar y adaptar para reutilizar ese código)
-        console.clear();
-        console.log("Productos encontrados:");
-        resultado.forEach((producto) => {
-            console.log("------");
-            console.log("Nombre: " + producto.nombre);
-            console.log("Precio: " + producto.precio);
-            console.log("Cantidad: " + producto.cantidad);
-            console.log("Subtotal: " + producto.subtotal);
-        });
+    //BUSQEDA POR ID
+    productSearchById(id) {
+        return this.productos.find((product) => product.id === id);
     }
 }
 
-// Creo el objeto carrito
-const carrito = new Carrito();
-
-// Funciones para los botones
-
-function agregarProducto() {
-    // Pido por prompt los datos del producto
-
-    // Nombre
-    let nombre = prompt("Introduzca el nombre del producto");
-    // Validación
-    if (nombre == "") {
-        alert("El nombre ingresado es inválido, ingrese los datos de nuevo.");
-        return;
+//CREAMOS CLASE MOLDE PARA LOS PRODUCTOS
+class Producto {
+    constructor(id, nombre, precio, imagen) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.imagen = imagen;
     }
-
-    // Precio
-    let precio = prompt("Introduzca el precio del producto");
-    // Validación
-    if (precio == "" || parseFloat(precio) <= 0) {
-        alert("El precio ingresado es inválido, ingrese los datos de nuevo.");
-        return;
+}
+// Objeto de la base de datos
+const db = new DbCarrito();
+//SE CARGARAN POR MEDIO DEL DOM LOS REGISTROS
+function loadProduct() {
+    const productos = db.sproducts();
+    for (const producto of productos) {
+        //INCRUSTAMOS CARDS DE PRODUCTOS APLICANDOLE BOOTSTRAP
+        divProductos.innerHTML += `<div class="col">
+                <div class="card">
+                    <img src=${producto.imagen} class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${producto.nombre}</h5>
+                        <p class="card-text">$ ${producto.precio}</p>
+                        <a class="btn btn-primary" id="btnAgregar" class="btnTienda" data-id=${product.id}>Comprar</a>
+                    </div>
+                </div>
+            </div>
+`;
     }
-
-    // Creo un objeto con los datos obtenidos del prompt
-    const nuevoProducto = {
-        nombre: nombre,
-        precio: parseFloat(precio),
-        cantidad: 1,
-        subtotal: parseFloat(precio),
-    };
-
-    // Llamo al método agregar del carrito y le paso el objeto del producto
-    // que acabo de crear como parámetro
-    carrito.agregar(nuevoProducto);
 }
 
-function quitarProducto() {
-    // Pido por prompt el nombre del producto que quiero quitar
-    let nombre = prompt("Introduzca el nombre del producto que desea quitar");
-    let precio = prompt("Introduzca el precio del producto que desea quitar");
 
-    // Llamo al método quitar del carrito y le paso por parámetro el nombre
-    // del producto que quiero quitar del carrito
-    carrito.quitar({ nombre: nombre, precio: precio });
-}
-
-function buscarProducto() {
-    // Pido por prompt el nombre del producto que quiero buscar
-    let nombre = prompt("Introduzca el nombre del producto que desea buscar");
-
-    // Llamo al método buscar del carrito y le paso por parámetro el nombre
-    // del producto que quiero buscar
-    carrito.buscar(nombre);
-}
+//INSTANCIAMOS
+loadProduct();
