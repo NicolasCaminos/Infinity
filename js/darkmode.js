@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Cambiar estilo 
         setTheme(localStorage.getItem('theme') || preferedColorScheme);
         // Actualizar variable de acuerdo a estado del checkbox
-        darkMode = (slider.checked) ? true : false;
+        darkMode = (slider.checked) ? 'off' : 'on';
         // Guardar variable en localStorage
         localStorage.setItem('dark', darkMode);
 
