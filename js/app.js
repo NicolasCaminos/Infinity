@@ -1,5 +1,4 @@
 
-
 //RENDERIZADOS
 const divProductos = document.getElementById('productos');
 const btnAdd = document.getElementById('btnAdd');
