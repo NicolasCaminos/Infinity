@@ -6,11 +6,22 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
     --#{$prefix}-body-bg-color: #334155;
     --#{$prefix}-body-text-color: $color-slate-50;
     --#{$prefix}-heading-text-color: $color-slate-50;
+    transition: 1500ms;
+
+    .logo_Infinity {
+        height: 80px;
+        width: 80px;
+        transition: 1500ms;
+        background: url("../../img/2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
     .navbar {
         background-color: $color-slate-700 !important;
         color: $color-slate-50 !important;
-
+            transition: 1500ms;
         .navbar-toggler {
             background-color: $color-slate-50 !important;
         }
@@ -31,20 +42,39 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
     }
 
     .card {
-        box-shadow: 0px 0px 5px 1px $color-slate-50;
+        box-shadow: 0px 0px 5px 1px #e2e8f0;
+
         :is(h5, p) {
             color: $color-slate-700;
         }
     }
 
-    .card:hover {
-        border-color: aqua;
+         .card:hover {
+             box-shadow: 0px 0px 5px 1px #e2e8f0;
 
+    
+
+         }
+
+    .offcanvas-header {
+        background-color: #334155 !important;
+        color: $color-slate-50;
+        border-width: 0px 0px 1px;
+        border-style: solid solid solid;
+    }
+
+    .offcanvas-body {
+        border-color: $color-slate-50;
+        background-color: #334155 !important;
     }
 
     .base-experience {
         p {
             color: $color-slate-700;
         }
+    }
+
+    .btn-close {
+        background-color: $color-slate-50;
     }
 }

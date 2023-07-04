@@ -18,6 +18,7 @@ body {
     font-weight: $font-weigth-base;
     background-color: $body-bg-color !important;
     font-family: $font-primary;
+    transition: 1000ms;
 
     body::-webkit-scrollbar {
         width: 10px;

@@ -1,5 +1,6 @@
 //RENDERIZADOS
 const divProductos = document.getElementById('productos');
+const btnAdd = document.getElementById('btnAdd');
 // Bienevenida
 function saludo() {
     Swal.fire(
@@ -41,6 +42,7 @@ function saludo() {
 //CREAMOS LA CLASE DE LA DB SIMULADA
 class DbCarrito {
     constructor() {
+
         this.productos = [];
         //CARGAMOS PRODUCTOS
         this.addProducts(1, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 24', 99.992, "https://http2.mlstatic.com/D_NQ_NP_987277-MLA47399516891_092021-O.webp");
@@ -56,8 +58,6 @@ class DbCarrito {
         this.addProducts(11, 'Notebook Lenovo Ideapad 1i Intel I3 1215u 4gb Ram (ampliable Hasta 12gb) 128gb Ssd Windows 11s', 204.999, "https://http2.mlstatic.com/D_NQ_NP_2X_787180-MLA54518190876_032023-F.webp");
         this.addProducts(13, 'Cable Red Utp Rj45 20 Mts Metros Categoria 5e Internet Patch', 1.449, "https://http2.mlstatic.com/D_NQ_NP_2X_833286-MLA44286952343_122020-F.webp");
         this.addProducts(13, 'Disco sólido interno Kingston SA400S37 / 480G 480GB negro', 16.424, "https://http2.mlstatic.com/D_NQ_NP_2X_751939-MLA46221843872_052021-F.webp");
-
-
     }
 
     //ESTE METODO SIMULARA LA INSERCION DE LOS REGISTROS
@@ -74,6 +74,7 @@ class DbCarrito {
         return this.productos.find((product) => product.id === id);
     }
 }
+//CLASE CARRITO 
 
 //CREAMOS CLASE MOLDE PARA LOS PRODUCTOS
 class Producto {
@@ -90,21 +91,24 @@ const db = new DbCarrito();
 function loadProduct() {
     const productos = db.sproducts();
     for (const producto of productos) {
-        //INCRUSTAMOS CARDS DE PRODUCTOS APLICANDOLE BOOTSTRAP
         divProductos.innerHTML += `<div class="col">
                 <div class="card">
                     <img src=${producto.imagen} class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">$ ${producto.precio}</p>
-                        <a class="btn btn-primary" id="btnAgregar" class="btnTienda" data-id=${product.id}>Comprar</a>
+                        <a class="btn btn-primary" class="btnAdd">Comprar</a>
                     </div>
                 </div>
             </div>
 `;
     }
 }
-
-
-//INSTANCIAMOS
+//AGREGAMOS PRODUCTOS AL CARRITO
+// for (const btn of btnAdd) {
+//     btn.addEventListener('click', (event) => {
+//         const id = parseInt(btn.dataset.id);
+//         const producto = db.productSearchById(id);
+//     });
+// }
 loadProduct();

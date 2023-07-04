@@ -54,6 +54,7 @@ body {
   font-weight: var(--infinity-font-weigth-base, 400);
   background-color: var(--infinity-body-bg-color, #f1f5f9) !important;
   font-family: var(--infinity-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  transition: 1000ms;
 }
 body body::-webkit-scrollbar {
   width: 10px;
@@ -79,10 +80,21 @@ body header {
   --infinity-body-bg-color: #334155;
   --infinity-body-text-color: $color-slate-50;
   --infinity-heading-text-color: $color-slate-50;
+  transition: 1500ms;
+}
+[data-theme=dark] .logo_Infinity {
+  height: 80px;
+  width: 80px;
+  transition: 1500ms;
+  background: url("../../img/2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 [data-theme=dark] .navbar {
   background-color: #334155 !important;
   color: #FFF !important;
+  transition: 1500ms;
 }
 [data-theme=dark] .navbar .navbar-toggler {
   background-color: #FFF !important;
@@ -98,16 +110,29 @@ body header {
   color: #FFF !important;
 }
 [data-theme=dark] .card {
-  box-shadow: 0px 0px 5px 1px #FFF;
+  box-shadow: 0px 0px 5px 1px #e2e8f0;
 }
 [data-theme=dark] .card :is(h5, p) {
   color: #334155;
 }
 [data-theme=dark] .card:hover {
-  border-color: aqua;
+  box-shadow: 0px 0px 5px 1px #e2e8f0;
+}
+[data-theme=dark] .offcanvas-header {
+  background-color: #334155 !important;
+  color: #FFF;
+  border-width: 0px 0px 1px;
+  border-style: solid solid solid;
+}
+[data-theme=dark] .offcanvas-body {
+  border-color: #FFF;
+  background-color: #334155 !important;
 }
 [data-theme=dark] .base-experience p {
   color: #334155;
+}
+[data-theme=dark] .btn-close {
+  background-color: #FFF;
 }
 
 /*Hystory*/ /*css Variables prefix*/
@@ -731,20 +756,22 @@ p-last-child {
 /*COLORS*/
 /*THEME GLOBAL VALUES*/
 /*INDEX*/
-#chart {
+body #chart {
   margin-right: 15px;
 }
-#chart .user-chart {
+body #chart .user-chart {
   height: 22px;
   width: 22px;
 }
-
-.logo_Infinity {
+body .logo_Infinity {
   height: 80px;
   width: 80px;
   position: relative;
+  background-image: url("../img/4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 body main .row {
   margin-top: 10vh;
 }
@@ -762,7 +789,7 @@ body main .card:hover {
   box-shadow: 0px 0px 5px 1px grey;
   height: 400px;
   transition-property: height;
-  transition-duration: 15s;
+  transition-duration: 1500ms;
 }
 body main .card:hover .btn {
   margin-top: 50px;

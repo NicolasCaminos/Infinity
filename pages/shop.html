@@ -28,7 +28,7 @@
     <header class="base-header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <img class="logo_Infinity" src="../img/4.png" class="d-block w-100" alt="...">
+                <div class="logo_Infinity" class="d-block w-100" alt="..."></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                 aria-controls="offcanvasRight">
                                 <p id="items" class="bi bi-cart-fill"></p>
-                                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
-                                    id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Comprados</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body" id="carrito">
-                                    </div>
-                                </div>
+
                             </li>
                         </ul>
                     </form>
                 </div>
             </div>
         </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Listado de Compra</h2>
+                <p class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></p>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
     </header>
     <!-- MAIN -->
 
@@ -180,9 +180,9 @@
     <!--    Plugin sweet Alert 2  -->
     <script src=" //cdn.jsdelivr.net/npm/sweetalert2@11">
     </script>
-    <!-- INSTACIONAMOS JS -->
-    <script src="../js/app.js"></script>
-    <script src="../js/darkmode.js" type="text/javascript" defer></script>
+    <!-- INSTACIONAMOS -->
+    <script src="../js/app.js"defer></script>
+    <script src="../js/darkmode.js" type="text/javascript"></script>
     <!--Comienza footer*/-->
     <footer class="base-footer">
         <div>
