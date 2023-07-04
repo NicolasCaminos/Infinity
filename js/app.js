@@ -1,3 +1,5 @@
+
+
 //RENDERIZADOS
 const divProductos = document.getElementById('productos');
 const btnAdd = document.getElementById('btnAdd');
@@ -111,4 +113,5 @@ function loadProduct() {
 //         const producto = db.productSearchById(id);
 //     });
 // }
+//Instanciamos
 loadProduct();
