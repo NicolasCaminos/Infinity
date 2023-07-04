@@ -86,7 +86,7 @@ body header {
   height: 80px;
   width: 80px;
   transition: 1500ms;
-  background: url("../../img/2.png");
+  background-image: url("../../img/2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

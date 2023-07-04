@@ -25,15 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (darkMode == 'on') {
         checkDark.checked = true;
     }
-    // // Escuchar cambios en checkbox
-    // slider.addEventListener('check', e => {
-    //     // Cambiar estilo 
-    //     setTheme(localStorage.getItem('theme') || preferedColorScheme);
-    //     // Actualizar variable de acuerdo a estado del checkbox
-    //     darkMode = (checkDark.checked) ? 'off' : 'on';
-    //     // Guardar variable en localStorage
-    //     localStorage.setItem('dark', darkMode);
+    // Escuchar cambios en checkbox
+    slider.addEventListener('check', e => {
+        // Cambiar estilo 
+        setTheme(localStorage.getItem('theme') || preferedColorScheme);
+        // Actualizar variable de acuerdo a estado del checkbox
+        darkMode = (checkDark.checked) ? 'off' : 'on';
+        // Guardar variable en localStorage
+        localStorage.setItem('dark', darkMode);
 
-    //     window.localStorage.setItem(slider.id, slider.checked)
-    // })
+        window.localStorage.setItem(slider.id, slider.checked)
+    })
 })
