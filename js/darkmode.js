@@ -17,7 +17,7 @@ setTheme(localStorage.getItem('theme') || preferedColorScheme);
 //DOM
 document.addEventListener('DOMContentLoaded', () => {
     // Buscar valor en localStorage, si no existe, poner en 'off'
-    let darkMode = localStorage.getItem('dark') || 'off';
+    let darkMode = localStorage.getItem('dark') || 'on';
     // Marcar checkbox y aplicar estilo a body si darkMode = 'off'
     if (darkMode == 'on') {
         slider.checked = true;
@@ -25,4 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.localStorage.setItem(slider.id, slider.checked)
     }
+    // Escuchar cambios en checkbox
+    slider.addEventListener('change', e => {
+        // Cambiar estilo 
+        setTheme(localStorage.getItem('theme') || preferedColorScheme);
+        // Actualizar variable de acuerdo a estado del checkbox
+        darkMode = (slider.checked) ? true : false;
+        // Guardar variable en localStorage
+        localStorage.setItem('dark', darkMode);
+
+        window.localStorage.setItem(slider.id, slider.checked)
+    })
 })
