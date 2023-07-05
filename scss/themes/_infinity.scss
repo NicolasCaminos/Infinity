@@ -8,17 +8,6 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
     --#{$prefix}-heading-text-color: $color-slate-50;
     transition: 1500ms;
 
-  
-        .logo_Infinity {
-            height: 80px;
-            width: 80px;
-            background-size: cover;
-            background-repeat: no-repeat;
-           background-image: url("../img/4.png");
-            background-position: center;
-        }
-  
-
     .navbar {
         background-color: $color-slate-700 !important;
         color: $color-slate-50 !important;
@@ -75,4 +64,13 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
     .btn-close {
         background-color: $color-slate-50;
     }
+
+    .logo_Infinity {
+         height: 80px;
+         width: 80px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-image: url("../img/4.png");
+         background-position: center;
+        }
 }
