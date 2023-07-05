@@ -123,7 +123,6 @@
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-
 .row > * {
   box-sizing: border-box;
   flex-shrink: 0;
@@ -4121,6 +4120,5 @@
     display: none !important;
   }
 }
-
 
 /*# sourceMappingURL=bootstrap-grid.css.map */
