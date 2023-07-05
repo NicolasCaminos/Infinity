@@ -1,6 +1,6 @@
 
 // Escuchar el tema preferido del cliente en su sistema
-const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark';
+const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'ligth';
 // Obtener el checkbox
 const slider = document.getElementById('slider');
 
