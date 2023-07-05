@@ -82,15 +82,6 @@ body header {
   --infinity-heading-text-color: $color-slate-50;
   transition: 1500ms;
 }
-[data-theme=dark] .logo_Infinity {
-  height: 80px;
-  width: 80px;
-  transition: 1500ms;
-  background-image: url("../../img/2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 [data-theme=dark] .navbar {
   background-color: #334155 !important;
   color: #FFF !important;
@@ -112,7 +103,7 @@ body header {
 [data-theme=dark] .card {
   box-shadow: 0px 0px 5px 1px #e2e8f0;
 }
-[data-theme=dark] .card :is(h5, p) {
+[data-theme=dark] .card h5, [data-theme=dark] .card p {
   color: #334155;
 }
 [data-theme=dark] .card:hover {
@@ -133,6 +124,14 @@ body header {
 }
 [data-theme=dark] .btn-close {
   background-color: #FFF;
+}
+[data-theme=dark] .logo_Infinity {
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/2.png");
+  background-position: center;
 }
 
 /*Hystory*/ /*css Variables prefix*/
@@ -763,7 +762,7 @@ body #chart .user-chart {
   height: 22px;
   width: 22px;
 }
-body .logo_Infinity {
+body .logo_Infinty {
   height: 80px;
   width: 80px;
   position: relative;
