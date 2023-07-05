@@ -1,4 +1,5 @@
 # Infinity
+
 ---
 
 ## Table of Contents
@@ -32,9 +33,10 @@ Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se alo
 <br>
 
 ### Entrega 0.2: Estructura, variables y objetos
+
 Objetivos generales
 
-Codificar la funcionalidad inicial del simulador. 
+Codificar la funcionalidad inicial del simulador.
 Identificar el flujo de trabajo del script en términos de captura de entradas ingresadas por el usuario, procesamiento esencial del simulador y notificación de resultados en forma de salida
 
 Objetivos específicos
@@ -51,18 +53,13 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 <li>Arrays.</li>
 <li>Métodos de búsqueda y filtrado sobre el Array.</li>:
 
+### Entrega 0.3
 
-<!-- ### Entrega 0.3
-
-
-
-### Entrega 0.4 Final -->
-
+### Entrega 0.4 Final
 
 ---
 
 ### Screenshot
-
 
 ---
 
