@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Buscar valor en localStorage, si no existe, poner en 'off'
     let darkMode = localStorage.getItem('dark') || 'off';
     // Marcar checkbox y aplicar estilo a body si darkMode = 'off'
-    if (darkMode == 'off') {
-        slider.checked = false;
+    if (darkMode == 'on') {
+        slider.checked = true;
         localStorage.setItem('dark', darkMode);
         window.localStorage.setItem(slider.id, slider.checked)
     }
