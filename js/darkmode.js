@@ -10,7 +10,7 @@ const setTheme = (theme) => {
 }
 
 slider.addEventListener('click', () => {
-    let switchToTheme = localStorage.getItem('theme') == 'dark' ? 'dark' : 'ligth';
+    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'ligth';
     setTheme(switchToTheme);
 });
 setTheme(localStorage.getItem('theme') || preferedColorScheme);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtener el checkbox
     let checkDark = document.getElementById('slider');
     // Marcar checkbox y aplicar estilo a body si darkMode = 'off'
-    if (darkMode === 'on') {
+    if (darkMode == 'on') {
         slider.checked = true;
     }
     // Escuchar cambios en checkbox
