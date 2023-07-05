@@ -37,7 +37,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
 :root {
-  color-scheme: "light";
+  color-scheme: light;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -49,63 +49,80 @@ body {
   -moz-osx-fontt-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -webkit-top-highlight-color: transparent;
-  color: var(--oasis-body-text-color, #64748b) !important;
-  line-height: var(--oasis-line-height-base, 1.5);
-  font-weight: var(--oasis-font-weigth-base, 400);
-  background-color: var(--oasis-body-bg-color, #f1f5f9) !important;
-  font-family: var(--oasis-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  color: var(--infinity-body-text-color, #64748b) !important;
+  line-height: var(--infinity-line-height-base, 1.5);
+  font-weight: var(--infinity-font-weigth-base, 400);
+  background-color: var(--infinity-body-bg-color, #f1f5f9) !important;
+  font-family: var(--infinity-font-primary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  transition: 1000ms;
 }
-
 body body::-webkit-scrollbar {
   width: 10px;
   height: 16px;
 }
-
 body body::-webkit-scrollbar-thumb {
   background-color: rgba(20, 20, 20, 0.805);
   border-radius: 10px;
 }
-
 body body::-webkit-scrollbar-thumb:hover {
   background-color: rgba(169, 169, 169, 0.668);
 }
-
 body img {
   display: block;
   max-width: 100%;
 }
-
 body header {
-  color: var(--oasis-body-bg-color, #f1f5f9);
+  color: var(--infinity-body-bg-color, #f1f5f9);
 }
 
 [data-theme=dark] {
   color-scheme: dark;
-  --oasis-body-bg-color: #0f172a;
-  --oasis-body-text-color: #FFFFFF;
-  --oasis-heading-text-color: #FFFFFF;
+  --infinity-body-bg-color: #334155;
+  --infinity-body-text-color: $color-slate-50;
+  --infinity-heading-text-color: $color-slate-50;
+  transition: 1500ms;
 }
-
-[data-theme=dark] #navbar_oasis {
-  background-color: #0f172a !important;
-  color: #FFFFFF !important;
+[data-theme=dark] .navbar {
+  background-color: #334155 !important;
+  color: #FFF !important;
+  transition: 1500ms;
 }
-
-[data-theme=dark] #navbar_oasis .navbar-toggler {
-  background-color: #FFFFFF !important;
+[data-theme=dark] .navbar .navbar-toggler {
+  background-color: #FFF !important;
 }
-
-[data-theme=dark] #navbar_oasis li a {
-  color: #FFFFFF !important;
+[data-theme=dark] .navbar li a {
+  color: #FFF !important;
 }
-
 [data-theme=dark] .embed-iframe-items::-webkit-scrollbar-thumb {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 10px;
 }
-
 [data-theme=dark] a {
-  color: #FFFFFF !important;
+  color: #FFF !important;
+}
+[data-theme=dark] .card {
+  box-shadow: 0px 0px 5px 1px #e2e8f0;
+}
+[data-theme=dark] .card h5,
+[data-theme=dark] .card p {
+  color: #334155;
+}
+[data-theme=dark] .card:hover {
+  box-shadow: 0px 0px 5px 1px #e2e8f0;
+}
+[data-theme=dark] .base-experience p {
+  color: #334155;
+}
+[data-theme=dark] .btn-close {
+  background-color: #FFF;
+}
+[data-theme=dark] .logo_Infinity {
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/2.png");
+  background-position: center;
 }
 
 /*Hystory*/ /*css Variables prefix*/
@@ -131,12 +148,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--oasis-heading-text-color, #334155);
+  color: var(--infinity-heading-text-color, #334155);
   font-weight: 500;
   line-height: 1.25;
-  font-family: var(--oasis-font-secondary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-family: var(--infinity-font-secondary, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
 }
-
 h1-first-child,
 h2-first-child,
 h3-first-child,
@@ -145,7 +161,6 @@ h5-first-child,
 h6-first-child {
   margin-top: 0;
 }
-
 h1-last-child,
 h2-last-child,
 h3-last-child,
@@ -186,15 +201,13 @@ h6 {
 }
 
 p {
-  color: var(--oasis-body-text-color, #64748b);
+  color: var(--infinity-body-text-color, #64748b);
   margin: 16px 0;
   font-weight: 1.5;
 }
-
 p-first-child {
   margin-top: 0;
 }
-
 p-last-child {
   margin-bottom: 0;
 }
@@ -226,7 +239,6 @@ p-last-child {
   padding-right: 16px;
   /* // Small devices (landscape phones, 576px and up) */
 }
-
 @media only screen and (min-width: 360px) and (max-width: 576px) {
   .container p {
     font-size: 0.75rem !important;
@@ -235,6 +247,7 @@ p-last-child {
     font-size: 1.125rem !important;
   }
 }
+
 /*css Variables prefix*/
 /*font family*/
 /*font sizes*/
@@ -257,7 +270,6 @@ p-last-child {
   display: flex;
   flex-direction: column;
 }
-
 .base-header {
   top: 0;
   left: 0;
@@ -268,21 +280,17 @@ p-last-child {
   border-bottom: 1px solid var(--prefix-header-border-color, #cbd5e1);
   background-color: var(--prefix-header-bg-color, #FFF) !important;
 }
-
 .base-headernav.navbar {
   background-color: var(--prefix-header-bg-color, #FFF) !important;
 }
-
 .base-headernav.navbar .bg-light {
   background-color: var(--prefix-header-bg-color, #FFF) !important;
 }
-
 .base-content {
   flex: 1;
   position: relative;
   margin-top: 10vh;
 }
-
 .base-footer {
   display: flex;
   position: relative;
@@ -293,12 +301,10 @@ p-last-child {
   bottom: 0;
   background-color: var(--prefix-header-bg-color, #1e293b);
 }
-
 .base-footer p {
   color: var(--prefix-header-border-color, #cbd5e1);
   display: flex;
 }
-
 .base-footer ul {
   text-align: right;
   display: flex;
@@ -311,25 +317,21 @@ p-last-child {
   text-decoration: none;
   position: relative;
 }
-
 .base-footer li a {
   text-decoration: none;
   font-size: 16px;
   color: var(--prefix-header-border-color, #cbd5e1);
 }
-
 .base-contact-form {
   background-color: #478AC9;
   height: 350px;
   margin-top: 10vh;
   z-index: 9000;
 }
-
 .base-contact-form h2 {
   text-align: center;
   color: white;
 }
-
 .base #base-footer-addPro {
   position: relative;
   top: 40vh;
@@ -744,30 +746,50 @@ p-last-child {
 /*COLORS*/
 /*THEME GLOBAL VALUES*/
 /*INDEX*/
-.user_bg {
-  height: 22px;
-  width: 22px;
-}
-
-.logo_Infinity {
+body .logo_Infinity {
   height: 80px;
   width: 80px;
   position: relative;
+  background-image: url("../img/4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 body main .row {
   margin-top: 10vh;
 }
-
 body main .card {
   text-align: justify;
 }
-
+body main .card .btn {
+  display: none;
+}
 body main .card img {
   height: 180px;
   width: 180px;
 }
-
+body main .card:hover {
+  box-shadow: 0px 0px 5px 1px grey;
+  height: 400px;
+  transition-property: height;
+  transition-duration: 1500ms;
+}
+body main .card:hover .btn {
+  margin-top: 50px;
+  display: block;
+}
+body main .base-app {
+  margin-top: 5vh;
+}
+body main .base-app .btn {
+  margin-left: 40%;
+  height: 50px;
+  width: 180px;
+  border-radius: 30px !important;
+  border-color: #FFCA2C;
+  border-width: 2px 2px 2px;
+  border-style: solid solid solid;
+}
 body main .base-contact-form .col-auto {
   display: flex;
   background-color: #FFF !important;
@@ -780,29 +802,24 @@ body main .base-contact-form .col-auto {
   border-radius: 30px;
   gap: 10px !important;
 }
-
 body main .base-contact-form .col-auto .mb-3 {
   margin-top: 30px !important;
   border-radius: 10px !important;
   align-content: center !important;
 }
-
 body main .base-partners {
   align-items: center;
   height: 300px;
   margin-top: 10vh;
 }
-
 body main .base-partners .container-fluid .d-flex {
   gap: 60px;
 }
-
 body main .base-partners .container-fluid .partners_images {
   height: 160px;
   width: 150px;
   display: inline-block;
 }
-
 body main .base-socialmedia .reds ul {
   display: flex;
   list-style: none;
@@ -813,21 +830,17 @@ body main .base-socialmedia .reds ul {
   text-decoration: none;
   position: relative;
 }
-
 body main .base-socialmedia .reds li a {
   text-decoration: none;
   font-size: 16px;
 }
-
 body main .base-socialmedia .reds li img {
   height: 50px;
   width: 50px;
 }
-
 body main .base-experience {
   gap: 60px;
 }
-
 body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) {
   display: inline-block;
   position: relative;
@@ -842,32 +855,27 @@ body main .base-experience :is(.experiences1, .experiences2, .experiences3, .exp
   border-style: solid solid solid;
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
-
 body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) img {
   width: 70px;
   height: 70px;
   border-radius: 40px;
   float: left;
 }
-
 body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) img p {
   display: flex;
   text-align: center;
   font-size: 7px;
   margin-left: 60px;
 }
-
 body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) .instagram_log {
   height: 25px;
   width: 25px;
 }
-
 body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) p {
   display: flex;
   vertical-align: top;
   text-align: justify;
 }
-
 body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
   display: inline-block;
   position: relative;
@@ -881,72 +889,57 @@ body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, 
   border-style: solid solid solid;
   border-radius: 50px;
 }
-
 body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) p {
   font-size: 20px;
 }
-
 body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) img {
   height: 280px;
   width: 180px;
   margin-left: 20%;
 }
-
 body main .base-elegirnos .elijen2 {
   background-color: #FFCA2C;
 }
-
 body main .base-elegirnos .elijen2 p {
   color: #FFF;
 }
-
 body main .base-elegirnos .elijen4 {
   background-color: #478AC9;
 }
-
 body main .base-elegirnos .elijen4 p {
   color: #FFF;
 }
-
 body main .base-elegirnos .elijen5 {
   background-color: #FFCA2C;
 }
-
 body main .base-elegirnos .elijen5 p {
   color: #FFF;
 }
-
 body main .base-elegirnos .elijen7 {
   background-color: #478AC9;
 }
-
 body main .base-elegirnos .elijen7 p {
   color: #FFF;
 }
-
 body main .whatsappbutton {
   position: absolute;
   height: 80px;
   width: 80px;
   float: left;
 }
-
 body main .whatsappbutton img {
   display: grid;
   z-index: 9000;
   position: fixed;
 }
-
 body main .base-geolocali-form {
   background-color: #478AC9;
   height: 400px;
   position: relative;
 }
-
 body main .base-geolocali-form h2 {
   color: #FFF;
 }
-
 body main .base-geolocali-form iframe {
   position: absolute;
   align-items: center;
@@ -960,17 +953,15 @@ body main .base-geolocali-form iframe {
   border-style: solid solid solid;
   border-radius: 20px;
 }
-
 body main .base-geolocali-form .datos {
   position: static;
   margin-left: 50%;
 }
-
 body main .base-geolocali-form .datos p {
   color: #FFF;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 576px) {
+@media only screen and (min-width: 360px) and (max-width: 770px) {
   body main .row {
     margin-top: 10vh;
   }
@@ -993,9 +984,6 @@ body main .base-geolocali-form .datos p {
   body main .base-partners .container-fluid .partners_images {
     height: 160px;
     width: 150px;
-  }
-  body main .base-contact-form {
-    max-width: fit-content;
   }
   body main .base-contact-form .col-auto {
     display: block;
@@ -1119,9 +1107,6 @@ body main .base-geolocali-form .datos p {
     height: 160px;
     width: 150px;
   }
-  body main .base-contact-form {
-    max-width: fit-content;
-  }
   body main .base-contact-form .col-auto {
     display: block;
     background-color: #FFF !important;
@@ -1175,7 +1160,97 @@ body main .base-geolocali-form .datos p {
 /*leading / line heights*/
 /*COLORS*/
 /*THEME GLOBAL VALUES*/
-/* // Small devices (landscape phones, 576px and up) */
+.ocultar {
+  position: relative;
+  right: 30px !important;
+  height: 30px;
+  width: 30px;
+}
 
+.contador {
+  display: block;
+  background-color: red;
+  border-radius: 150px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: -10px 0 0 30px;
+}
+
+.producto {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.offcanvas-header {
+  background-color: #334155 !important;
+  color: #FFF;
+  border-width: 0px 0px 1px;
+  border-style: solid solid solid;
+}
+
+.productoCarrito h5,
+.productoCarrito p {
+  color: #FFF;
+}
+
+.offcanvas-body {
+  border-color: #FFF;
+  background-color: #334155 !important;
+  color: #FFF;
+}
+
+.producto .precio {
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: red;
+  display: inline-block;
+  padding: 4px 10px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.producto .imagen {
+  display: flex;
+  justify-content: center;
+  min-height: 160px;
+  margin: 20px 0;
+}
+
+.card-img-top {
+  height: 100px;
+  width: 100px;
+}
+
+.producto:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.base-contentShop {
+  top: 5vh;
+}
+
+/*css Variables prefix*/
+/*font family*/
+/*font sizes*/
+/*12px*/
+/*14px*/
+/*16px*/
+/*18px*/
+/*20px*/
+/*24px*/
+/*30*/
+/*36px*/
+/*48px*/
+/*60px*/
+/* font weigth*/
+/*leading / line heights*/
+/*COLORS*/
+/*THEME GLOBAL VALUES*/
+/* // Small devices (landscape phones, 576px and up) */
 
 /*# sourceMappingURL=style.css.map */
