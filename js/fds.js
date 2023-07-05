@@ -1,42 +1,3 @@
-// Bienevenida
-function saludo() {
-    Swal.fire(
-        'Bienvenido!',
-        `a Infinity`,
-        'success'
-    )
-    /*Inicia el programa*/
-    let comando;
-
-    while (comando != 'Salir' || comando != 'Comprar') {
-        comando = prompt('Ingrese el comando:\n\n- Registrar Usuario\n- Comprar\n- Salir');
-
-        switch (comando) {
-
-            case 'Registrar Usuario':
-                let nombreUsuario = prompt('Ingrese su usuario:');
-                if (nombreUsuario != null || nombreUsuario != '') {
-                    Swal.fire(
-                        'Good job!',
-                        `Se registro como: ${nombreUsuario}`,
-                        'success'
-
-                    )
-                }
-                else {
-                    nombreUsuario = prompt('Ingrese su usuario:'); //valida nuevamente que se ingrese el valor
-                }
-                break;
-
-        }
-        break;
-    }
-
-}
-
-// COMENZAMOS PROYECTO
-
-//CREAMOS LA CLASE DE LA DB SIMULADA
 class BaseDeDatos {
     constructor() {
         // Array de la base de datos
@@ -150,8 +111,7 @@ class Carrito {
             // para saber desde que producto estamos haciendo click
             divCarrito.innerHTML += `
         <div class="productoCarrito">
-            <h5>${producto.nombre}</h2>
-            <img src=${producto.imagen} class="card-img-top" alt="...">
+            <h2>${producto.nombre}</h2>
             <p>$${producto.precio}</p>
             <p>Cantidad: ${producto.cantidad}</p>
             <a href="#" data-id="${producto.id}" class="btnQuitar">Quitar del carrito</a>
@@ -213,17 +173,15 @@ function cargarProductos(productos) {
         // el atributo data-id, con el id del producto. Eso después nos va a ser muy útil
         // para saber desde que producto estamos haciendo click
         divProductos.innerHTML += `
-        <div class="col">
                 <div class="card">
                     <img src=${producto.imagen} class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">$ ${producto.precio}</p>
-            <a href="#" class="btnAgregar btn btn-primary" data-id="${producto.id}">Agregar al carrito</a>
+                        <a class="btn btn-primary" class="btnAdd">Comprar</a>
                     </div>
                 </div>
             </div>
-        </div>
     `;
     }
     // Botones agregar al carrito: como no sabemos cuántos productos hay en nuestra base de datos,
@@ -255,6 +213,10 @@ inputBuscar.addEventListener("keyup", (event) => {
     cargarProductos(productos);
 });
 
+// Trigger para ocultar/mostrar el carrito
+botonCarrito.addEventListener("click", (event) => {
+    document.querySelector("section").classList.toggle("ocultar");
+});
 
 // Objeto carrito: lo instanciamos a lo último de nuestro archivo JavaScript
 // para asegurarnos que TODO esté declarado e inicializado antes de crear el carrito

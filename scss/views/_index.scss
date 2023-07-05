@@ -2,25 +2,19 @@
 
 /*INDEX*/
 body {
-    #chart {
-            margin-right: 15px;
-    
-            .user-chart {
-                height: 22px;
-                width: 22px;
-            }
-        }
-    
-        .logo_Infinity {
-            height: 80px;
-            width: 80px;
-            position: relative;
-            background-image: url("../img/4.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            
-        }
+
+
+    .logo_Infinity {
+        height: 80px;
+        width: 80px;
+        position: relative;
+        background-image: url("../img/4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
     & main {
         & .row {
             margin-top: 10vh;
@@ -28,6 +22,7 @@ body {
 
         .card {
             text-align: justify;
+
             .btn {
                 display: none;
             }
@@ -66,8 +61,6 @@ body {
         }
 
         .base-contact-form {
-
-
             .col-auto {
                 display: flex;
                 background-color: $color-slate-50 !important;

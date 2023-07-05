@@ -34,25 +34,14 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
     .card {
         box-shadow: 0px 0px 5px 1px #e2e8f0;
 
-        h5, p {
+        h5,
+        p {
             color: $color-slate-700;
         }
     }
 
     .card:hover {
         box-shadow: 0px 0px 5px 1px #e2e8f0;
-    }
-
-    .offcanvas-header {
-        background-color: #334155 !important;
-        color: $color-slate-50;
-        border-width: 0px 0px 1px;
-        border-style: solid solid solid;
-    }
-
-    .offcanvas-body {
-        border-color: $color-slate-50;
-        background-color: #334155 !important;
     }
 
     .base-experience {
@@ -66,11 +55,11 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
     }
 
     .logo_Infinity {
-         height: 80px;
-         width: 80px;
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-image: url("../img/2.png");
-         background-position: center;
-        }
+        height: 80px;
+        width: 80px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../img/2.png");
+        background-position: center;
+    }
 }
