@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtener el checkbox
     let checkDark = document.getElementById('slider');
     // Marcar checkbox y aplicar estilo a body si darkMode = 'off'
-    if (darkMode == 'off') {
+    if (darkMode == 'on') {
         slider.checked = true;
     }
     // Escuchar cambios en checkbox
