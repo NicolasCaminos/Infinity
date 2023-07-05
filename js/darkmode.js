@@ -1,6 +1,6 @@
 
 // Escuchar el tema preferido del cliente en su sistema
-const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'ligth';
+const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 // Obtener el checkbox
 const slider = document.getElementById('slider');
 
@@ -10,7 +10,7 @@ const setTheme = (theme) => {
 }
 
 slider.addEventListener('click', () => {
-    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'ligth' : 'dark';
+    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
     setTheme(switchToTheme);
 });
 setTheme(localStorage.getItem('theme') || preferedColorScheme);
