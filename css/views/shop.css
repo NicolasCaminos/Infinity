@@ -1,17 +1,92 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "../utilities/variables";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\views\shop.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"../utilities/variables\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\views\\shop.scss 1:9  root stylesheet";
+/*css Variables prefix*/
+/*font family*/
+/*font sizes*/
+/*12px*/
+/*14px*/
+/*16px*/
+/*18px*/
+/*20px*/
+/*24px*/
+/*30*/
+/*36px*/
+/*48px*/
+/*60px*/
+/* font weigth*/
+/*leading / line heights*/
+/*COLORS*/
+/*THEME GLOBAL VALUES*/
+.ocultar {
+  position: relative;
+  right: 30px !important;
+  height: 30px;
+  width: 30px;
 }
+
+.contador {
+  display: block;
+  background-color: red;
+  border-radius: 150px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: -10px 0 0 30px;
+}
+
+.producto {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.offcanvas-header {
+  background-color: #334155 !important;
+  color: #FFF;
+  border-width: 0px 0px 1px;
+  border-style: solid solid solid;
+}
+
+.productoCarrito h5,
+.productoCarrito p {
+  color: #FFF;
+}
+
+.offcanvas-body {
+  border-color: #FFF;
+  background-color: #334155 !important;
+  color: #FFF;
+}
+
+.producto .precio {
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: red;
+  display: inline-block;
+  padding: 4px 10px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.producto .imagen {
+  display: flex;
+  justify-content: center;
+  min-height: 160px;
+  margin: 20px 0;
+}
+
+.card-img-top {
+  height: 100px;
+  width: 100px;
+}
+
+.producto:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.base-contentShop {
+  top: 5vh;
+}
+
+/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,45 @@
+@import '../utilities/variables';
+
+:root {
+    color-scheme: light;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fontt-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-top-highlight-color: transparent;
+    color: $body-text-color !important;
+    line-height: $line-height-base;
+    font-weight: $font-weigth-base;
+    background-color: $body-bg-color !important;
+    font-family: $font-primary;
+    transition: 1000ms;
+
+    body::-webkit-scrollbar {
+        width: 10px;
+        height: 16px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: rgba(20, 20, 20, 0.805);
+        border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(169, 169, 169, 0.668);
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    header {
+        color: $body-bg-color;
+    }
+}

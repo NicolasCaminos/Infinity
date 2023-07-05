@@ -1,0 +1,65 @@
+$header-bg-color: var(--#{prefix}-header-bg-color, $color-slate-100);
+$body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
+
+[data-theme='dark'] {
+    color-scheme: dark;
+    --#{$prefix}-body-bg-color: #334155;
+    --#{$prefix}-body-text-color: $color-slate-50;
+    --#{$prefix}-heading-text-color: $color-slate-50;
+    transition: 1500ms;
+
+    .navbar {
+        background-color: $color-slate-700 !important;
+        color: $color-slate-50 !important;
+        transition: 1500ms;
+
+        .navbar-toggler {
+            background-color: $color-slate-50 !important;
+        }
+
+        & li a {
+            color: $color-slate-50 !important;
+        }
+    }
+
+    .embed-iframe-items::-webkit-scrollbar-thumb {
+        background-color: $color-slate-50;
+        border-radius: 10px;
+    }
+
+    a {
+        color: $color-slate-50 !important;
+    }
+
+    .card {
+        box-shadow: 0px 0px 5px 1px #e2e8f0;
+
+        h5,
+        p {
+            color: $color-slate-700;
+        }
+    }
+
+    .card:hover {
+        box-shadow: 0px 0px 5px 1px #e2e8f0;
+    }
+
+    .base-experience {
+        p {
+            color: $color-slate-700;
+        }
+    }
+
+    .btn-close {
+        background-color: $color-slate-50;
+    }
+
+    .logo_Infinity {
+        height: 80px;
+        width: 80px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../img/2.png");
+        background-position: center;
+    }
+}
