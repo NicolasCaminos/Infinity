@@ -18,7 +18,7 @@ setTheme(localStorage.getItem('theme') || preferedColorScheme);
 //JS Boostrap
 document.addEventListener('DOMContentLoaded', () => {
     // Buscar valor en localStorage, si no existe, poner en 'off'
-    let darkMode = localStorage.getItem('dark') || 'on';
+    let darkMode = localStorage.getItem('dark') || 'off';
     // Obtener el checkbox
     let checkDark = document.getElementById('slider');
     // Marcar checkbox y aplicar estilo a body si darkMode = 'off'
