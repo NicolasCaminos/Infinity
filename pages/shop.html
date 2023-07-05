@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CHARSET -->
+    <meta charset="UTF-8">
+    <!-- VIEWPORT -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link CSS Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- TITULO -->
+    <title>Infinity</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="base-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="logo_Infinity" class="d-block w-100" alt="..."></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                    </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2"id="inputBuscar" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    <form class="d-flex" id="form_slider">
+                        <p id="items" class="bi bi-brightness-alt-high"></p>
+                        <div class="form-check form-switch">
+                            <input title="checkbox-datascheme" class="form-check-input" type="checkbox" role="switch"
+                                id="slider">
+                        </div>
+                        <p id="items" class="bi bi-moon-fill"></p>
+                    </form>
+                    <form class="d-flex">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item" id="chart" type="button" data-bs-scroll="true"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <p id="items" class="bi bi-cart-fill carro"></p>
+                            </li>
+                        </ul>
+                        <div class="ocultar">
+                            <span class="contador" id="cantidadProductos">0</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Listado de Productos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Carrito -->
+                <h6>
+                    <span id="cantidadProductos"></span>
+                </h6>
+                <div id="carrito">
+                    <!-- Acá vamos a cargar los productos que estén en el carrito -->
+                </div>
+                <h3>Total: $<span id="totalCarrito">0</span></h3>
+            </div>
+    </header>
+    <!-- MAIN -->
+    <main class="base-content base-contentShop">
+        <!-- PRODUCTOS -->
+        <div class="textcard">
+            <h2 class="u-align-center u-text u-text-1">Nuestros productos</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="productos">
+        </div>
+
+        <!-- CONTACTO -->
+        <section class="base-contact-form">
+
+            <form class="row">
+                <h2>Contacto</h2>
+                <div class="col-auto">
+                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="name" class="visually-hidden">Password</label>
+                        <input type="text" class="form-control" id="text" placeholder="Enter your Name">
+                    </div>
+                    <div class="">
+                        <a type="submit" class="btn btn-warning mb-3" href="#">Submit</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- MARCAS -->
+        <section class="base-partners">
+            <div class="contenedor">
+                <h2 class="u-align-center u-text u-text-1">Algunas de nuestras marcas oficiales</h2>
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <div class="partners_images ">
+                            <div class="u-container-layout u-similar-container u-container-layout-1">
+                                <img class="u-image u-image-contain u-image-1" src="../img/294699_asus_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-2">
+                                <img class="u-image u-image-contain u-image-2" src="../img/4691411_dell_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-3">
+                                <img class="u-image u-image-contain u-image-3"
+                                    src="../img/7422538_apple_computer_laptop_technology_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-4">
+                                <img class="u-image u-image-contain u-image-4"
+                                    src="../img/7422460_hp_computer_hardware_laptop_icon.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-4">
+                                <img class="u-image u-image-contain u-image-4" src="../img/microsoft.png">
+                            </div>
+
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-4">
+                                <img class="u-image u-image-contain u-image-4" src="../img/xiaomi.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-4">
+                                <img class="u-image u-image-contain u-image-4" src="../img/amd.png">
+                            </div>
+                        </div>
+                        <div class="partners_images">
+                            <div class="u-container-layout u-similar-container u-container-layout-4">
+                                <img class="u-image u-image-contain u-image-4" src="../img/intel.png">
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- LOCALIZACIóN -->
+        <section class="base-geolocali-form base-geolocali-formshop">
+            <form class="row">
+                <h2>Nuestra ubicación</h2>
+                <div class="datos">
+                    <p>Dirección: Santa cruz 1293. Córdoba Capital, Córdoba Argentina</p>
+                    <p>Teléfono: +54351123556789</p>
+                    <p>Mail: nicoasis7@gmail.com</p>
+                    <p>Horarios: Lunes a Viernes de 10.00 a 13.30hs / 14.30 a 18hs - Sabados: 10.00 a 13.30hs</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.5565527739473!2d-64.21122592442319!3d-31.426341674257174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a270595596a7%3A0x8c57b1b575ede617!2sSta.%20Cruz%201293%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1687371089927!5m2!1ses!2sar"
+                    width="300" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </form>
+        </section>
+        <script src="../js/darkmode.js" type="text/javascript"></script>
+    </main>
+
+
+    <!-- INSTACIONAMOS -->
+    <script src="../js/app.js" defer></script>
+    <!--    Plugin sweet Alert 2  -->
+    <script src=" //cdn.jsdelivr.net/npm/sweetalert2@11">
+    </script>
+    <!--Comienza footer -->
+    <footer class="base-footer">
+        <div>
+            <p class="pFooter"> Nicolas Maximiliano Caminos © 2023 </p>
+        </div>
+        <ul class="socialmedia">
+            <li>
+                <a title="github" class="bi bi-github" href="https://github.com/NicolasCaminos"></a>
+            </li>
+            <li>
+                <a title="linkedin" class="bi bi-linkedin" href="https://www.linkedin.com/in/nicolascaminos/"></a>
+            </li>
+            <li>
+                <a title="Whatsapp" class="bi bi-whatsapp" href="https://api.whatsapp.com/send?phone=3517075862"></a>
+            </li>
+            <li>
+                <a title="Youtube" class="bi bi-youtube"
+                    href="https://www.youtube.com/channel/UCUDVBtnOQi4c7E8jebpjc9Q"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
