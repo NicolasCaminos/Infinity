@@ -55,7 +55,16 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 
 ### Entrega 0.3
 
-### Entrega 0.4 Final
+Definir eventos a manejar y su función de respuesta.
+Modificar el DOM, ya sea para definir elementos al cargar la página o para realizar salidas de un procesamiento.
+Almacenar datos (clave-valor) en el Storage y recuperarlos
+
+<li>DOM </li>
+<li>Eventos </li>
+<li>Local Storage</li>
+<li>Night-light mode</li>
+
+<!-- ### Entrega 0.4 Final -->
 
 ---
 
