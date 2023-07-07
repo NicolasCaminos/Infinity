@@ -84,8 +84,6 @@ Almacenar datos (clave-valor) en el Storage y recuperarlos
 
 ---
 
----
-
 ## Technologies
 
 <h3 align="left">Languages and Tools:</h3>
@@ -133,9 +131,9 @@ $ npm install sweetalert2
 
 ## Collaboration
 
-<li>Sebastián Cámara: Profesor</li>
+<li>Profesor: Sebastián Cámara</li>
 <li>Nicolás Caminos</li>
-<li>Romano Ibarra: Tutor</li>
+<li>Tutor: Romano Ibarra</li>
 <br>
 
 ---
