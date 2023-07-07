@@ -70,6 +70,20 @@ Almacenar datos (clave-valor) en el Storage y recuperarlos
 
 ### Screenshot
 
+<h4> Night Mode</h4>
+
+![Image text](https://nicolascaminos.github.io/Infinity/img/readme/imagen1.jpg)
+<br>
+<br>
+<br>
+
+<h4> Light Mode</h4>
+
+![Image text](https://nicolascaminos.github.io/Infinity/img/readme/imagen2.jpg)
+<br>
+
+---
+
 ---
 
 ## Technologies

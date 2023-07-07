@@ -124,6 +124,17 @@ body header {
   background-image: url("../img/2.png");
   background-position: center;
 }
+[data-theme=dark] .offcanvas-header {
+  background-color: #334155;
+  color: #FFF;
+  border-width: 0px 0px 1px;
+  border-style: solid solid solid;
+}
+[data-theme=dark] .offcanvas-body {
+  border-color: #FFF;
+  background-color: #334155;
+  color: #FFF;
+}
 
 /*Hystory*/ /*css Variables prefix*/
 /*font family*/
@@ -1184,21 +1195,8 @@ body main .base-geolocali-form .datos p {
   padding: 10px;
 }
 
-.offcanvas-header {
-  background-color: #334155 !important;
-  color: #FFF;
-  border-width: 0px 0px 1px;
-  border-style: solid solid solid;
-}
-
 .productoCarrito h5,
 .productoCarrito p {
-  color: #FFF;
-}
-
-.offcanvas-body {
-  border-color: #FFF;
-  background-color: #334155 !important;
   color: #FFF;
 }
 

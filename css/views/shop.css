@@ -39,21 +39,8 @@
   padding: 10px;
 }
 
-.offcanvas-header {
-  background-color: #334155 !important;
-  color: #FFF;
-  border-width: 0px 0px 1px;
-  border-style: solid solid solid;
-}
-
 .productoCarrito h5,
 .productoCarrito p {
-  color: #FFF;
-}
-
-.offcanvas-body {
-  border-color: #FFF;
-  background-color: #334155 !important;
   color: #FFF;
 }
 
