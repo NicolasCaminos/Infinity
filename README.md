@@ -51,7 +51,7 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 <li>Funciones esenciales del proceso a simular.</li>
 <li>Objetos de JS.</li>
 <li>Arrays.</li>
-<li>Métodos de búsqueda y filtrado sobre el Array.</li>:
+<li>Métodos de búsqueda y filtrado sobre el Array.</li>
 
 ### Entrega 0.3
 
