@@ -109,9 +109,37 @@ class Carrito {
         if (productoEnCarrito) {
             // Si está en el carrito, le sumo la cantidad
             productoEnCarrito.cantidad++;
+            Toastify({
+
+                text: `Has agregado correctame el producto ${producto.nombre} a tu carrito`,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                duration: 3000,
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function () { } // Callback after click
+            }).showToast();
         } else {
             // Si no está, lo agrego al carrito
             this.carrito.push({ ...producto, cantidad: 1 });
+            Toastify({
+
+                text: `Has agregado correctame el producto ${producto.nombre} a tu carrito`,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "center", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                duration: 3000,
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                onClick: function () { } // Callback after click
+            }).showToast();
         }
         // Actualizo el storage
         localStorage.setItem("carrito", JSON.stringify(this.carrito));
