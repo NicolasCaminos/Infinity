@@ -1,4 +1,5 @@
 # Infinity
+
 ---
 
 ## Table of Contents
@@ -32,9 +33,10 @@ Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se alo
 <br>
 
 ### Entrega 0.2: Estructura, variables y objetos
+
 Objetivos generales
 
-Codificar la funcionalidad inicial del simulador. 
+Codificar la funcionalidad inicial del simulador.
 Identificar el flujo de trabajo del script en términos de captura de entradas ingresadas por el usuario, procesamiento esencial del simulador y notificación de resultados en forma de salida
 
 Objetivos específicos
@@ -49,20 +51,36 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 <li>Funciones esenciales del proceso a simular.</li>
 <li>Objetos de JS.</li>
 <li>Arrays.</li>
-<li>Métodos de búsqueda y filtrado sobre el Array.</li>:
+<li>Métodos de búsqueda y filtrado sobre el Array.</li>
 
+### Entrega 0.3
 
-<!-- ### Entrega 0.3
+Definir eventos a manejar y su función de respuesta.
+Modificar el DOM, ya sea para definir elementos al cargar la página o para realizar salidas de un procesamiento.
+Almacenar datos (clave-valor) en el Storage y recuperarlos
 
+<li>DOM </li>
+<li>Eventos </li>
+<li>Local Storage</li>
+<li>Night-light mode</li>
 
-
-### Entrega 0.4 Final -->
-
+<!-- ### Entrega 0.4 Final -->
 
 ---
 
 ### Screenshot
 
+<h4> Night Mode</h4>
+
+![Image text](https://nicolascaminos.github.io/Infinity/img/readme/imagen1.png)
+<br>
+<br>
+<br>
+
+<h4> Light Mode</h4>
+
+![Image text](https://nicolascaminos.github.io/Infinity/img/readme/imagen2.png)
+<br>
 
 ---
 
@@ -79,7 +97,7 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <h2>Html5</h2>
 <br>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <h2>JS</h2>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <h2>JS ES6</h2>
 <br>
 
 <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a> <h2>v19.8.1</h2>
@@ -113,16 +131,16 @@ $ npm install sweetalert2
 
 ## Collaboration
 
-<li>Sebastián Cámara: Profesor</li>
+<li>Profesor: Sebastián Cámara</li>
 <li>Nicolás Caminos</li>
-<li>Romano Ibarra: Tutor</li>
+<li>Tutor: Romano Ibarra</li>
 <br>
 
 ---
 
 ## FAQs
 
-Puede visitar la web en: <a href="https://nicolascaminos.github.io/Infinity/" target="_blank" rel="noreferrer"> <img src="img/3.png" alt="oasis" width="40" height="40"/> </a><a href="https://nicolascaminos.github.io/Infinity/" target="_blank" rel="noreferrer">https://nicolascaminos.github.io/Infinity/</a>
+Puede visitar la web en: <a href="https://nicolascaminos.github.io/Infinity/" target="_blank" rel="noreferrer"> <img src="img/3.png" alt="Infinity" width="40" height="40"/> </a><a href="https://nicolascaminos.github.io/Infinity/" target="_blank" rel="noreferrer">https://nicolascaminos.github.io/Infinity/</a>
 
 <br>
 Muchas Gracias.

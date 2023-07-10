@@ -32,3 +32,23 @@ const initializePage = async () => {
     await setTheme(localStorage.getItem('theme') || preferredColorScheme);
 };
 initializePage();
+
+async function lazyLoadImages() {
+    const images = document.querySelectorAll("#experiences-row img[data-src]");
+
+    for (const img of images) {
+        await new Promise((resolve) => {
+            const imageLoader = new Image();
+            imageLoader.src = img.getAttribute("data-src");
+            imageLoader.onload = () => {
+                img.src = img.getAttribute("data-src");
+                resolve();
+            };
+        });
+    }
+}
+
+// Cargar las imágenes cuando se haya cargado el contenido principal de la página
+document.addEventListener("DOMContentLoaded", async () => {
+    await lazyLoadImages();
+});
