@@ -34,16 +34,9 @@ Ramas de trabajo: El mismo cuenta con dos ramas de trabajo: Master (donde se alo
 
 ### Entrega 0.2: Estructura, variables y objetos
 
-Objetivos generales
-
-Codificar la funcionalidad inicial del simulador.
-Identificar el flujo de trabajo del script en términos de captura de entradas ingresadas por el usuario, procesamiento esencial del simulador y notificación de resultados en forma de salida
-
-Objetivos específicos
-
-Capturar entradas mediante prompt().
-Declarar variables y objetos necesarios para simular el proceso seleccionado.
-Crear funciones y/o métodos para realizar operaciones (suma, resta, concatenación, división, porcentaje, etc).
+Se captura entradas mediante prompt().
+Se Declara variables y objetos necesarios para simular el proceso seleccionado.
+Se Crea funciones y/o métodos para realizar operaciones (suma, resta, concatenación, división, porcentaje, etc).
 Efectuar una salida, que es el resultado de los datos procesados, la cual puede hacerse por alert() o console.log().
 
 <li>Estructura HTML del proyecto. </li>
@@ -55,7 +48,7 @@ Efectuar una salida, que es el resultado de los datos procesados, la cual puede 
 
 ### Entrega 0.3
 
-Definir eventos a manejar y su función de respuesta.
+Se definen eventos a manejar y su función de respuesta.
 Modificar el DOM, ya sea para definir elementos al cargar la página o para realizar salidas de un procesamiento.
 Almacenar datos (clave-valor) en el Storage y recuperarlos
 
@@ -64,7 +57,17 @@ Almacenar datos (clave-valor) en el Storage y recuperarlos
 <li>Local Storage</li>
 <li>Night-light mode</li>
 
-<!-- ### Entrega 0.4 Final -->
+### Entrega 0.4 Final
+
+Se presenta la versión final de aplicación que utilice Javascript para solucionar un problema real al usuario:
+
+<li>Objetos y Arrays. Métodos de Arrays.</li>
+<li>Funciones y condicionales.</li>
+G<li>eneración del DOM de forma dinámica. Eventos.</li>
+<li>Sintaxis avanzada.</li>
+<li>Al menos una librería de uso relevante para el proyecto.</li>
+<li>Manejo de promesas con fetch.</li>
+<li>Carga de datos desde un JSON local o desde una API externa.</li>
 
 ---
 
