@@ -42,19 +42,19 @@ class BaseDeDatos {
         // Array de la base de datos
         this.productos = [];
         // Con una simple línea de código, vamos a ir cargando todos los productos que tengamos
-        this.agregarRegistro(1, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 24', 99.992, "https://http2.mlstatic.com/D_NQ_NP_987277-MLA47399516891_092021-O.webp");
-        this.agregarRegistro(2, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 240', 213.972, "https://http2.mlstatic.com/D_NQ_NP_2X_736468-MLA54339629438_032023-F.webp");
-        this.agregarRegistro(3, 'Pc Armada Pro Intel 3.6ghz Dual Core Ssd 240 Ram 8gb Ddr4', 147.999, "https://http2.mlstatic.com/D_NQ_NP_2X_832597-MLA53084402117_122022-F.webp");
-        this.agregarRegistro(4, 'Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480', 294.499, "https://http2.mlstatic.com/D_NQ_NP_2X_884368-MLA53087339003_122022-F.webp");
-        this.agregarRegistro(5, 'Nootebook Asus X515EA slate gray 15.6", Intel Core i5 1135G7 8GB de RAM 256GB SSD, Intel Iris Xe Graphics G7 80EUs 1920x1080px', 355.799, "https://http2.mlstatic.com/D_NQ_NP_2X_908593-MLA49420869607_032022-F.webp");
-        this.agregarRegistro(6, 'Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480', 32.102, "https://http2.mlstatic.com/D_NQ_NP_2X_741824-MLA41898051260_052020-F.webp");
-        this.agregarRegistro(7, 'Disco sólido interno Crucial CT1000BX500SSD1 1TB', 94.499, "https://http2.mlstatic.com/D_NQ_NP_2X_741824-MLA41898051260_052020-F.webp");
-        this.agregarRegistro(8, 'Disco Solido Ssd 1tb M.2 Kingston Snv2s/1000g Nvme Pcie 4.0', 30.501, "https://http2.mlstatic.com/D_NQ_NP_2X_830625-MLA52062909392_102022-F.webp");
-        this.agregarRegistro(9, 'Notebook Asus Zenbook 14 Amd Ryzen 7-5825u 8 Gb Ram 512 Gb Ssd Jade Negro Windows 11', 649.872, "https://http2.mlstatic.com/D_NQ_NP_2X_731490-MLA54202850371_032023-F.webp");
-        this.agregarRegistro(10, 'Notebook Asus Amd R5-5600h 16gb 512g Win11', 560.999, "https://http2.mlstatic.com/D_NQ_NP_2X_970053-MLU69515847455_052023-F.webp");
-        this.agregarRegistro(11, 'Notebook Lenovo Ideapad 1i Intel I3 1215u 4gb Ram (ampliable Hasta 12gb) 128gb Ssd Windows 11s', 204.999, "https://http2.mlstatic.com/D_NQ_NP_2X_787180-MLA54518190876_032023-F.webp");
-        this.agregarRegistro(13, 'Cable Red Utp Rj45 20 Mts Metros Categoria 5e Internet Patch', 1.449, "https://http2.mlstatic.com/D_NQ_NP_2X_833286-MLA44286952343_122020-F.webp");
-        this.agregarRegistro(13, 'Disco sólido interno Kingston SA400S37 / 480G 480GB negro', 16.424, "https://http2.mlstatic.com/D_NQ_NP_2X_751939-MLA46221843872_052021-F.webp");
+        this.agregarRegistro(1, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 24', 99992, "https://http2.mlstatic.com/D_NQ_NP_987277-MLA47399516891_092021-O.webp");
+        this.agregarRegistro(2, 'Pc Gamer Armada Ryzen 5 4600g 12 Nucleo Amd Ram 16gb Ssd 240', 213972, "https://http2.mlstatic.com/D_NQ_NP_2X_736468-MLA54339629438_032023-F.webp");
+        this.agregarRegistro(3, 'Pc Armada Pro Intel 3.6ghz Dual Core Ssd 240 Ram 8gb Ddr4', 147999, "https://http2.mlstatic.com/D_NQ_NP_2X_832597-MLA53084402117_122022-F.webp");
+        this.agregarRegistro(4, 'Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480', 294499, "https://http2.mlstatic.com/D_NQ_NP_2X_884368-MLA53087339003_122022-F.webp");
+        this.agregarRegistro(5, 'Nootebook Asus X515EA slate gray 15.6", Intel Core i5 1135G7 8GB de RAM 256GB SSD, Intel Iris Xe Graphics G7 80EUs 1920x1080px', 355799.36, "https://http2.mlstatic.com/D_NQ_NP_2X_908593-MLA49420869607_032022-F.webp");
+        this.agregarRegistro(6, 'Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480', 32102, "https://http2.mlstatic.com/D_NQ_NP_2X_741824-MLA41898051260_052020-F.webp");
+        this.agregarRegistro(7, 'Disco sólido interno Crucial CT1000BX500SSD1 1TB', 94499.20, "https://http2.mlstatic.com/D_NQ_NP_2X_741824-MLA41898051260_052020-F.webp");
+        this.agregarRegistro(8, 'Disco Solido Ssd 1tb M.2 Kingston Snv2s/1000g Nvme Pcie 4.0', 30501, "https://http2.mlstatic.com/D_NQ_NP_2X_830625-MLA52062909392_102022-F.webp");
+        this.agregarRegistro(9, 'Notebook Asus Zenbook 14 Amd Ryzen 7-5825u 8 Gb Ram 512 Gb Ssd Jade Negro Windows 11', 649872.00, "https://http2.mlstatic.com/D_NQ_NP_2X_731490-MLA54202850371_032023-F.webp");
+        this.agregarRegistro(10, 'Notebook Asus Amd R5-5600h 16gb 512g Win11', 560999, "https://http2.mlstatic.com/D_NQ_NP_2X_970053-MLU69515847455_052023-F.webp");
+        this.agregarRegistro(11, 'Notebook Lenovo Ideapad 1i Intel I3 1215u 4gb Ram (ampliable Hasta 12gb) 128gb Ssd Windows 11s', 204999, "https://http2.mlstatic.com/D_NQ_NP_2X_787180-MLA54518190876_032023-F.webp");
+        this.agregarRegistro(12, 'Cable Red Utp Rj45 20 Mts Metros Categoria 5e Internet Patch', 1449, "https://http2.mlstatic.com/D_NQ_NP_2X_833286-MLA44286952343_122020-F.webp");
+        this.agregarRegistro(13, 'Disco sólido interno Kingston SA400S37 / 480G 480GB negro', 16424.69, "https://http2.mlstatic.com/D_NQ_NP_2X_751939-MLA46221843872_052021-F.webp");
     }
 
     // Método que crea el objeto producto y lo almacena en el array con un push
@@ -109,37 +109,9 @@ class Carrito {
         if (productoEnCarrito) {
             // Si está en el carrito, le sumo la cantidad
             productoEnCarrito.cantidad++;
-            Toastify({
-
-                text: `Has agregado correctame el producto ${producto.nombre} a tu carrito`,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "center", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                duration: 3000,
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
-                },
-                onClick: function () { } // Callback after click
-            }).showToast();
         } else {
             // Si no está, lo agrego al carrito
             this.carrito.push({ ...producto, cantidad: 1 });
-            Toastify({
-
-                text: `Has agregado correctame el producto ${producto.nombre} a tu carrito`,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "center", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                duration: 3000,
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
-                },
-                onClick: function () { } // Callback after click
-            }).showToast();
         }
         // Actualizo el storage
         localStorage.setItem("carrito", JSON.stringify(this.carrito));
@@ -180,14 +152,16 @@ class Carrito {
         <div class="productoCarrito">
             <h5>${producto.nombre}</h2>
             <img src=${producto.imagen} class="card-img-top" alt="...">
-            <p>$${producto.precio}</p>
+            <p>${producto.precio}</p>
             <p>Cantidad: ${producto.cantidad}</p>
             <a href="#" data-id="${producto.id}" class="btnQuitar">Quitar del carrito</a>
         </div>
     `;
             // Actualizamos los totales
-            this.total += producto.precio * producto.cantidad;
+            this.total += Number(producto.precio * producto.cantidad);
+            this.total = Number(this.total);
             this.totalProductos += producto.cantidad;
+
         }
         // Botones de quitar: como no sabemos cuántos productos hay en el carrito,
         // buscamos TODOS los botones que hayamos renderizado recién, y los recorremos uno por uno
@@ -212,7 +186,7 @@ class Producto {
     constructor(id, nombre, precio, imagen = false) {
         this.id = id;
         this.nombre = nombre;
-        this.precio = precio;
+        this.precio = parseFloat(precio);
         this.imagen = imagen;
     }
 }
@@ -234,43 +208,58 @@ cargarProductos(bd.traerRegistros());
 // Esta función regular recibe como parámetro un array de productos y se encarga
 // de renderizarlos en el HTML
 function cargarProductos(productos) {
-    divProductos.innerHTML = "";
-    // Recorremos todos los productos y lo agregamos al div #productos
-    for (const producto of productos) {
-        // A cada div lo agregamos un botón de Agregar al carrito, y a ese botón le pasamos
-        // el atributo data-id, con el id del producto. Eso después nos va a ser muy útil
-        // para saber desde que producto estamos haciendo click
-        divProductos.innerHTML += `
+    try {
+        divProductos.innerHTML = "";
+        // Recorremos todos los productos y lo agregamos al div #productos
+        for (const producto of productos) {
+            // A cada div lo agregamos un botón de Agregar al carrito, y a ese botón le pasamos
+            // el atributo data-id, con el id del producto. Eso después nos va a ser muy útil
+            // para saber desde qué producto estamos haciendo click
+            divProductos.innerHTML += `
         <div class="col">
-                <div class="card">
-                    <img src=${producto.imagen} class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">${producto.nombre}</h5>
-                        <p class="card-text">$ ${producto.precio}</p>
-            <a href="#" class="btnAgregar btn btn-primary" data-id="${producto.id}">Agregar al carrito</a>
-                    </div>
-                </div>
+          <div class="card">
+            <img src=${producto.imagen} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${producto.nombre}</h5>
+              <p class="card-text">$ ${producto.precio}</p>
+              <a href="#" class="btnAgregar btn btn-primary" data-id="${producto.id}">Agregar al carrito</a>
             </div>
+          </div>
         </div>
-    `;
-    }
-    // Botones agregar al carrito: como no sabemos cuántos productos hay en nuestra base de datos,
-    // buscamos TODOS los botones que hayamos renderizado recién, y los recorremos uno por uno
-    const botonesAgregar = document.querySelectorAll(".btnAgregar");
-    for (const boton of botonesAgregar) {
-        // Le agregamos un evento click a cada uno
-        boton.addEventListener("click", (event) => {
-            event.preventDefault();
-            // Obtenemos el ID del producto del atributo data-id
-            const id = Number(boton.dataset.id);
-            // Con ese ID, consultamos a nuestra base de datos por el producto
-            const producto = bd.registroPorId(id);
-            // Agregamos el registro (producto) a nuestro carrito
-            carrito.agregar(producto);
-        });
+        
+      `
+
+        }
+
+        // Botones agregar al carrito: como no sabemos cuántos productos hay en nuestra base de datos,
+        // buscamos TODOS los botones que hayamos renderizado recién, y los recorremos uno por uno
+        const botonesAgregar = document.querySelectorAll(".btnAgregar");
+        for (const boton of botonesAgregar) {
+            // Le agregamos un evento click a cada uno
+            boton.addEventListener("click", (event) => {
+                try {
+
+                    event.preventDefault();
+                    // Obtenemos el ID del producto del atributo data-id
+                    const id = Number(boton.dataset.id);
+                    // Con ese ID, consultamos a nuestra base de datos por el producto
+                    const producto = bd.registroPorId(id);
+                    console.log("estoy en el try y compraste: " + producto.nombre);
+
+                    // Agregamos el registro (producto) a nuestro carrito
+                    carrito.agregar(producto);
+
+                } catch (error) {
+                    console.error("Error al agregar el producto al carrito:", error);
+                    // Puedes realizar acciones de manejo de errores aquí, como mostrar un mensaje al usuario o realizar alguna acción alternativa.
+                }
+            });
+        }
+    } catch (error) {
+        console.error("Error al cargar los productos:", error);
+        // Puedes realizar acciones de manejo de errores aquí, como mostrar un mensaje al usuario o realizar alguna acción alternativa.
     }
 }
-
 // Buscador: al soltar una tecla se ejecuta el evento keyup
 inputBuscar.addEventListener("keyup", (event) => {
     event.preventDefault();
