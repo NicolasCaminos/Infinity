@@ -68,7 +68,6 @@ Se presenta la versión final de aplicación que utilice Javascript para solucio
 <li>Al menos una librería de uso relevante para el proyecto.</li>
 <li>Manejo de promesas con fetch.</li>
 <li>Carga de datos desde API externa: MELI (Mercado Libre).</li>
-
 ---
 
 ### Screenshot
