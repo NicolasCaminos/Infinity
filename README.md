@@ -63,7 +63,7 @@ Se presenta la versión final de aplicación que utilice Javascript para solucio
 
 <li>Objetos y Arrays. Métodos de Arrays.</li>
 <li>Funciones y condicionales.</li>
-G<li>eneración del DOM de forma dinámica. Eventos.</li>
+<li>eneración del DOM de forma dinámica. Eventos.</li>
 <li>Sintaxis avanzada.</li>
 <li>Al menos una librería de uso relevante para el proyecto.</li>
 <li>Manejo de promesas con fetch.</li>
