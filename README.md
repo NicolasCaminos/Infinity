@@ -67,7 +67,7 @@ Se presenta la versión final de aplicación que utilice Javascript para solucio
 <li>Sintaxis avanzada.</li>
 <li>Al menos una librería de uso relevante para el proyecto.</li>
 <li>Manejo de promesas con fetch.</li>
-<li>Carga de datos desde un JSON local o desde una API externa.</li>
+<li>Carga de datos desde API externa: MELI (Mercado Libre).</li>
 
 ---
 
