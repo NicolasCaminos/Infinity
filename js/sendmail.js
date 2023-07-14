@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const btn = document.getElementById('button');
-    const to_name = document.getElementById('to_name');
+    const to_name = document.getElementById('contact_form');
     const message = document.getElementById('message');
     document.getElementById('contact_form').addEventListener('submit', function (event) {
         event.preventDefault();
@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             });
         // Reiniciar los valores de las variables
-        to_name.value = ''; // Asignar una cadena vacía
-        message.value = ''; // Asignar una cadena vacía
+        to_name.reset();
         btn.value = 'Enviar';
     });
 });
