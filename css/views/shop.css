@@ -280,6 +280,16 @@ nav li:hover a:hover {
     height: 180px;
     width: 180px;
   }
+  body main .cardshop h5 {
+    font-size: 18px;
+  }
+  body main .cardshop p {
+    display: none;
+  }
+  body main .cardshop:hover p {
+    font-size: 12px;
+    display: block;
+  }
   body main .base-partners {
     align-items: center;
     height: 900px;

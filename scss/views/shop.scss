@@ -335,7 +335,23 @@ nav {
                     width: 180px;
                 }
             }
-
+                        .cardshop {
+                            h5 {
+                                font-size: 18px;
+                            }
+            
+                            p {
+                                display: none;
+                            }
+                        }
+            
+                        .cardshop:hover {
+            
+                            p {
+                                font-size: 12px;
+                                display: block;
+                            }
+                        }
             .base-partners {
                 align-items: center;
                 height: 900px;
