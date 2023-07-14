@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     icon: "success",
                     confirmButtonText: "Aceptar",
                 });
+                // Reiniciar los valores de las variables
+                to_name.reset();
+                btn.value = 'Enviar';
             }, (err) => {
                 btn.value = 'Mail no enviado';
                 Swal.fire({
@@ -24,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
             });
-        // Reiniciar los valores de las variables
-        to_name.reset();
-        btn.value = 'Enviar';
+
     });
 });
