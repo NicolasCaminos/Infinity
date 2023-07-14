@@ -68,6 +68,7 @@ Se presenta la versión final de aplicación que utilice Javascript para solucio
 <li>Al menos una librería de uso relevante para el proyecto.</li>
 <li>Manejo de promesas con fetch.</li>
 <li>Carga de datos desde API externa: MELI (Mercado Libre).</li>
+<li>Sending Mail.</li>
 ---
 
 ### Screenshot
@@ -109,6 +110,8 @@ Se presenta la versión final de aplicación que utilice Javascript para solucio
 <br>
 
 <a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert" width="90" height="40"/> </a> <h2>v11.7.12 6</h2></p>
+<br>
+<a href="https://www.emailjs.com/" target="_blank" rel="noreferrer"> <img src="https://www.emailjs.com/logo.png" alt="EmailJS" width="90" height="40"/> </a> <h2>EmailJS</h2></p>
 <br>
 
 ---
