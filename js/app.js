@@ -132,9 +132,10 @@ function cargarProductos(productos) {
     divProductos.innerHTML = "";
     // Recorremos todos los productos y lo agregamos al div #productos
     for (const producto of productos) {
+        //Obtenemos el precio desde API y si es null no lo mostramos.
         let preciosM = producto.precio !== producto.precioReal && producto.precioReal !== null ? "$" + numeral(producto.precioReal).format("0,0.00") : "";
+        //Obtenemos el precio desde API y si es new lo mostramos como nuevo, sino como usado.
         let estado = producto.estado !== "new" ? "Usado" : "Nuevo";
-
         // A cada div lo agregamos un botón de Agregar al carrito, y a ese botón le pasamos
         // el atributo data-id, con el id del producto. Eso después nos va a ser muy útil
         // para saber desde que producto estamos haciendo click
@@ -154,10 +155,7 @@ function cargarProductos(productos) {
           </div>
         </div>
             `;
-        const precioReaElement = document.getElementById("txtPrecioRea");
-
         // Obtener el valor actual de la API para producto.precioReal
-
         // Verificar si el precio es $0.00 y ocultar el elemento si es así
 
     }
