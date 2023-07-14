@@ -282,26 +282,6 @@ class Carrito {
         spanCantidadProductos.innerText = this.totalProductos;
         spanTotalCarrito.innerText = this.total;
     }
-    generarPDF() {
-        // Crea una instancia de jsPDF
-        var doc = new jsPDF();
-
-        // Agrega el contenido al PDF
-        doc.setFontSize(18);
-        doc.text('Carrito de Compras', 20, 20);
-
-        doc.setFontSize(14);
-        var posY = 40;
-        for (const producto of this.carrito) {
-            doc.text(`Producto: ${producto.nombre}`, 20, posY);
-            doc.text(`Precio: $${producto.precio}`, 20, posY + 10);
-            posY += 20;
-        }
-
-        // Guarda el PDF con un nombre único
-        var fileName = 'carrito-' + Date.now() + '.pdf';
-        doc.save(fileName);
-    }
     // Método para quitar o restar productos del carrito
     quitar(id) {
         // Recibimos como parámetro el ID del producto, con ese ID buscamos el índice
@@ -375,8 +355,6 @@ document.addEventListener("DOMContentLoaded", function () {
             icon: "success",
             confirmButtonText: "Aceptar",
         });
-
-
 
         // Vacíamos el carrito
         carrito.vaciar();
