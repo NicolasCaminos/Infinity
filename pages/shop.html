@@ -86,17 +86,26 @@
                     <!-- Acá vamos a cargar los productos que estén en el carrito -->
                 </div>
                 <h3>Total: $<span id="totalCarrito">0</span></h3>
+                 <a href="#" id="botonComprar" class="oculto btn btnComprar btn-primary">Comprar</a>
             </div>
     </header>
     <!-- MAIN -->
     <main class="base-content base-contentShop">
+<ul class="nav justify-content-center">
+            <li><a href="#" class="btn btnCategoria nav-item todos" data-categoria="MLA1652">Todos</a></li>
+            <li>
+                <a href="#" class="btn btnCategoria nav-item notebook" data-categoria="MLA1652">Notebooks</a>
+            </li>
+            <li><a href="#" class="btn btnCategoria nav-item placa" data-categoria="MLA1658">Placas de Video</a></li>
+            <li><a href="#" class="btn btnCategoria nav-item procesadores" data-categoria="MLA1693">Procesadores</a></li>
+</ul>
         <!-- PRODUCTOS -->
         <div class="textcard">
             <h2 class="u-align-center u-text u-text-1">Nuestros productos</h2>
         </div>
         <div class="row row-cols-1 row-cols-md-2 g-4" id="productos">
-        </div>
 
+        </div>
         <!-- CONTACTO -->
         <section class="base-contact-form">
 
@@ -187,15 +196,18 @@
 
             </form>
         </section>
+        
         <script src="../js/darkmode.js" type="text/javascript"></script>
+        <!-- Numeral libreria -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+        <!-- Librería Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Toastify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!-- INSTACIONAMOS -->
+        <script src="../js/app.js" defer></script>
     </main>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <!-- INSTACIONAMOS -->
-  <script src="../js/app.js"></script>
-    <!--    Plugin sweet Alert 2  -->
-    <script src=" //cdn.jsdelivr.net/npm/sweetalert2@11">
-    </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--Comienza footer -->
     <footer class="base-footer">
         <div>

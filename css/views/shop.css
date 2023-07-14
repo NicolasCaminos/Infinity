@@ -22,6 +22,10 @@
   width: 30px;
 }
 
+.oculto {
+  display: none;
+}
+
 .contador {
   display: block;
   background-color: red;
@@ -33,6 +37,11 @@
   margin: -10px 0 0 30px;
 }
 
+.mostrar {
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
 .producto {
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -42,6 +51,9 @@
 .productoCarrito h5,
 .productoCarrito p {
   color: #FFF;
+}
+.productoCarrito img {
+  height: 150px;
 }
 
 .producto .precio {
@@ -62,9 +74,28 @@
   margin: 20px 0;
 }
 
-.card-img-top {
-  height: 100px;
-  width: 100px;
+.cardshop {
+  height: 500px;
+  width: 550px;
+}
+.cardshop .card-envio {
+  color: rgb(36, 208, 36) !important;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.cardshop .card-img-top {
+  height: 200px;
+  width: 200px;
+}
+.cardshop .btnAgregar {
+  display: none;
+}
+
+.cardshop:hover {
+  height: fit-content;
+}
+.cardshop:hover .btnAgregar {
+  display: block;
 }
 
 .producto:hover {
@@ -74,6 +105,218 @@
 
 .base-contentShop {
   top: 5vh;
+}
+
+nav li:hover {
+  border-radius: 30px;
+}
+nav li:hover a:hover {
+  background-color: #334155;
+  color: aliceblue !important;
+  transition: 100ms;
+  border-radius: 30px;
+}
+
+.todos:hover li a {
+  background-color: #334155;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 770px) {
+  body main .row {
+    margin-top: 10vh;
+  }
+  body main .cardshop {
+    text-align: justify;
+    height: 300px;
+    width: fit-content;
+  }
+  body main .cardshop img {
+    height: 180px;
+    width: 180px;
+  }
+  body main .base-partners {
+    align-items: center;
+    height: 700px;
+    margin-top: 10vh;
+    display: block !important;
+  }
+  body main .base-partners .container-fluid .d-flex {
+    gap: 10px;
+  }
+  body main .base-partners .container-fluid .partners_images {
+    height: 160px;
+    width: 150px;
+  }
+  body main .base-contact-form .col-auto {
+    display: block;
+    background-color: #FFF !important;
+    width: 90% !important;
+    height: 200px;
+    position: relative !important;
+    left: 1%;
+    margin-top: 20px;
+    padding: 10 0 0 0;
+    border-radius: 30px;
+    gap: 10px !important;
+  }
+  body main .base-contact-form .col-auto .mb-3 {
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    align-content: center !important;
+  }
+  body main .base-experience {
+    gap: 60px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    background-color: #e2e8f0;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) img {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    float: left;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) img p {
+    display: flex;
+    width: 10%;
+    text-align: center;
+    font-size: 7px;
+    margin-left: 60px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) .instagram_log {
+    height: 25px;
+    width: 25px;
+  }
+  body main .base-experience :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) p {
+    display: flex;
+    vertical-align: top;
+    text-align: justify;
+  }
+  body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
+    width: 50%;
+    height: 50%;
+    margin-left: 40px;
+  }
+  body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) p {
+    font-size: 15px;
+  }
+  body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) img {
+    height: 50%;
+    width: 50%;
+    margin-left: 20%;
+  }
+  body main .whatsappbutton {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    float: left;
+  }
+  body main .whatsappbutton img {
+    display: grid;
+    z-index: 9000;
+    position: fixed;
+  }
+  body main .base-geolocali-form {
+    height: 40%;
+    position: relative;
+  }
+  body main .base-geolocali-form iframe {
+    height: 50%;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  body main .base-geolocali-form .datos {
+    position: static;
+    margin-left: 50%;
+    max-width: 20%;
+  }
+  body main .base-geolocali-form .datos p {
+    display: flex word-break;
+    margin-bottom: 35%;
+    font-size: 10px;
+    color: #FFF;
+  }
+  body main #categorias {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+  }
+  body main #categorias li a {
+    text-decoration: none;
+  }
+}
+/* */
+@media screen and (min-width: 768px) and (max-width: 975px) {
+  body main .row {
+    margin-top: 10vh;
+  }
+  body main .cardshop {
+    text-align: justify;
+    width: fit-content;
+  }
+  body main .cardshop img {
+    height: 180px;
+    width: 180px;
+  }
+  body main .base-partners {
+    align-items: center;
+    height: 900px;
+    margin-top: 10vh;
+    display: block !important;
+  }
+  body main .base-partners .container-fluid .d-flex {
+    gap: 10px;
+  }
+  body main .base-partners .container-fluid .partners_images {
+    height: 160px;
+    width: 150px;
+  }
+  body main .base-contact-form .col-auto {
+    display: block;
+    background-color: #FFF !important;
+    width: 90% !important;
+    height: 200px;
+    position: relative !important;
+    left: 1%;
+    margin-top: 20px;
+    padding: 10 0 0 0;
+    border-radius: 30px;
+    gap: 10px !important;
+  }
+  body main .base-contact-form .col-auto .mb-3 {
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    align-content: center !important;
+  }
+  body main .base-geolocali-form {
+    top: 20vh !important;
+    position: relative;
+  }
+  body main .base-geolocali-form iframe {
+    top: 10vh;
+    right: 60%;
+    width: 300px;
+  }
+  body main .base-geolocali-form .datos {
+    position: static;
+    width: 200px;
+  }
+  body main .base-geolocali-form .datos p {
+    font-size: 10px;
+    color: #FFF;
+  }
 }
 
 /*# sourceMappingURL=shop.css.map */

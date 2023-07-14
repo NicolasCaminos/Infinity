@@ -20,6 +20,32 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
         & li a {
             color: $color-slate-50 !important;
         }
+
+        li:hover {
+            border-radius: 10px;
+
+            a:hover {
+                background-color: aliceblue;
+                color: #334155 !important;
+                transition: 100ms;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    body {
+        main {
+            li:hover {
+                border-radius: 30px;
+
+                a:hover {
+                    background-color: aliceblue !important;
+                    color: #334155 !important;
+                    transition: 100ms;
+                    border-radius: 30px;
+                }
+            }
+        }
     }
 
     .embed-iframe-items::-webkit-scrollbar-thumb {
@@ -62,16 +88,18 @@ $body-dark-bg-color: var(--#{$prefix}-body-bg-color, #334155);
         background-image: url("../img/2.png");
         background-position: center;
     }
-        .offcanvas-header {
-            background-color: #334155;
-            color: $color-slate-50;
-            border-width: 0px 0px 1px;
-            border-style: solid solid solid;
-        }
-        .offcanvas-body {
-         border-color: $color-slate-50;
-         background-color: #334155;
-         color: $color-slate-50;
-        
-        }
+
+    .offcanvas-header {
+        background-color: #334155;
+        color: $color-slate-50;
+        border-width: 0px 0px 1px;
+        border-style: solid solid solid;
+    }
+
+    .offcanvas-body {
+        border-color: $color-slate-50;
+        background-color: #334155;
+        color: $color-slate-50;
+
+    }
 }

@@ -7,6 +7,10 @@
     width: 30px;
 }
 
+.oculto {
+    display: none;
+}
+
 .contador {
     display: block;
     background-color: red;
@@ -18,6 +22,10 @@
     margin: -10px 0 0 30px;
 }
 
+.mostrar {
+    text-decoration: line-through;
+    font-size: 12px;
+}
 
 .producto {
     border: 1px solid rgba(0, 0, 0, 0.4);
@@ -30,6 +38,10 @@
     h5,
     p {
         color: $color-slate-50;
+    }
+
+    img {
+        height: 150px;
     }
 }
 
@@ -51,9 +63,34 @@
     margin: 20px 0;
 }
 
-.card-img-top {
-    height: 100px;
-    width: 100px;
+.cardshop {
+    height: 500px;
+    width: 550px;
+
+    .card-envio {
+        color: rgb(36, 208, 36) !important;
+        font-size: 12px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .card-img-top {
+        height: 200px;
+        width: 200px;
+    }
+
+    .btnAgregar {
+        display: none;
+    }
+
+}
+
+.cardshop:hover {
+    height: fit-content;
+
+    .btnAgregar {
+        display: block;
+    }
 }
 
 .producto:hover {
@@ -63,4 +100,285 @@
 
 .base-contentShop {
     top: 5vh;
+}
+
+nav {
+    li:hover {
+        border-radius: 30px;
+
+        a:hover {
+            background-color: #334155;
+            color: aliceblue !important;
+            transition: 100ms;
+            border-radius: 30px;
+        }
+    }
+}
+
+
+.todos:hover {
+    li a {
+        background-color: #334155;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 770px) {
+    body {
+        & main {
+            & .row {
+                margin-top: 10vh;
+            }
+
+            .cardshop {
+                text-align: justify;
+                height: 300px;
+                width: fit-content;
+
+                img {
+                    height: 180px;
+                    width: 180px;
+                }
+            }
+
+            .base-partners {
+                align-items: center;
+                height: 700px;
+                margin-top: 10vh;
+                display: block !important;
+
+                .container-fluid {
+                    .d-flex {
+                        gap: 10px;
+                    }
+
+                    .partners_images {
+                        height: 160px;
+                        width: 150px;
+                    }
+                }
+            }
+
+            .base-contact-form {
+                .col-auto {
+                    display: block;
+                    background-color: $color-slate-50 !important;
+                    width: 90% !important;
+                    height: 200px;
+                    position: relative !important;
+                    left: 1%;
+                    margin-top: 20px;
+                    padding: 10 0 0 0;
+                    border-radius: 30px;
+                    gap: 10px !important;
+
+                    .mb-3 {
+                        margin-top: 10px !important;
+                        border-radius: 10px !important;
+                        align-content: center !important;
+                    }
+                }
+            }
+
+            .base-experience {
+
+                gap: 60px;
+
+                :is(.experiences1, .experiences2, .experiences3, .experiences4, .experiences5, .experiences6, .experiences7, .experiences8, .experiences9, .experiences10) {
+                    display: inline-block;
+                    position: relative;
+                    justify-content: center;
+                    background-color: $color-slate-200;
+                    width: 300px;
+                    height: 300px;
+                    margin-left: 30px;
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 40px;
+                        float: left;
+
+                        p {
+                            display: flex;
+                            width: 10%;
+                            text-align: center;
+                            font-size: 7px;
+                            margin-left: 60px;
+                        }
+                    }
+
+                    .instagram_log {
+                        height: 25px;
+                        width: 25px;
+                    }
+
+                    p {
+                        display: flex;
+                        vertical-align: top;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .base-elegirnos {
+                :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
+                    width: 50%;
+                    height: 50%;
+                    margin-left: 40px;
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    img {
+
+                        height: 50%;
+                        width: 50%;
+                        margin-left: 20%;
+                    }
+                }
+            }
+
+            .whatsappbutton {
+                position: absolute;
+                height: 80px;
+                width: 80px;
+                float: left;
+
+                img {
+                    display: grid;
+                    z-index: 9000;
+                    position: fixed;
+                }
+            }
+
+            .base-geolocali-form {
+                height: 40%;
+                position: relative;
+
+                iframe {
+                    height: 50%;
+                    width: 40%;
+                    margin-left: 5%;
+                    margin-top: 15%;
+
+                }
+
+                .datos {
+                    position: static;
+                    margin-left: 50%;
+                    max-width: 20%;
+
+                    p {
+                        display: flex word-break;
+                        margin-bottom: 35%;
+                        font-size: 10px;
+                        color: $color-slate-50;
+                    }
+                }
+            }
+
+            #categorias {
+
+                display: flex;
+                list-style: none;
+                gap: 15px;
+                bottom: 0px;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                position: relative;
+
+                li a {
+                    text-decoration: none;
+                }
+
+            }
+        }
+
+
+    }
+}
+
+/* */
+@media screen and (min-width: 768px) and (max-width: 975px) {
+    body {
+        & main {
+            & .row {
+                margin-top: 10vh;
+            }
+
+            .cardshop {
+                text-align: justify;
+                width: fit-content;
+
+                img {
+                    height: 180px;
+                    width: 180px;
+                }
+            }
+
+            .base-partners {
+                align-items: center;
+                height: 900px;
+                margin-top: 10vh;
+                display: block !important;
+
+                .container-fluid {
+                    .d-flex {
+                        gap: 10px;
+                    }
+
+                    .partners_images {
+                        height: 160px;
+                        width: 150px;
+                    }
+                }
+            }
+
+            .base-contact-form {
+                .col-auto {
+                    display: block;
+                    background-color: $color-slate-50 !important;
+                    width: 90% !important;
+                    height: 200px;
+                    position: relative !important;
+                    left: 1%;
+                    margin-top: 20px;
+                    padding: 10 0 0 0;
+                    border-radius: 30px;
+                    gap: 10px !important;
+
+                    .mb-3 {
+                        margin-top: 10px !important;
+                        border-radius: 10px !important;
+                        align-content: center !important;
+                    }
+                }
+            }
+
+            .base-geolocali-form {
+                top: 20vh !important;
+                position: relative;
+
+                iframe {
+                    top: 10vh;
+                    right: 60%;
+                    width: 300px;
+                }
+
+                .datos {
+                    position: static;
+                    width: 200px;
+
+                    p {
+                        font-size: 10px;
+                        color: $color-slate-50;
+                    }
+                }
+            }
+        }
+
+    }
+
 }
