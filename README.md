@@ -111,7 +111,7 @@ Se presenta la versión final de aplicación que utilice Javascript para solucio
 
 <a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="SweetAlert" width="90" height="40"/> </a> <h2>v11.7.12 6</h2></p>
 <br>
-<a href="https://github.com/apvarun/toastify-js" target="_blank" rel="noreferrer"> <img src="https://apvarun.github.io/toastify-js/example/pattern.png" alt="toastify" width="90" height="40"/> </a> <h2>Toastify</h2></p>
+<a href="https://github.com/apvarun/toastify-js" target="_blank" rel="noreferrer"> <img src="https://apvarun.github.io/toastify-js/example/pattern.png" alt="toastify" width="90" height="40"/> </a> <h2>Toastify JS</h2></p>
 <br>
 <a href="https://www.emailjs.com/" target="_blank" rel="noreferrer"> <img src="https://www.emailjs.com/logo.png" alt="EmailJS" width="90" height="40"/> </a> <h2>EmailJS</h2></p>
 <br>
