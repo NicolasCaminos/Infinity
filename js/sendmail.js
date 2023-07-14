@@ -29,4 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let formulario = document.getElementById('contact_form');
+        formulario.addEventListener('submit', function () {
+            formulario.reset();
+        });
+    });
 });
