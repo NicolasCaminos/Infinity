@@ -276,6 +276,14 @@ p-last-child {
     font-size: 1.125rem !important;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 975px) {
+  .container p {
+    font-size: 0.75rem !important;
+  }
+  .container h3 {
+    font-size: 1.125rem !important;
+  }
+}
 
 /*css Variables prefix*/
 /*font family*/
@@ -1337,10 +1345,10 @@ nav li:hover a:hover {
     display: block;
     background-color: #FFF !important;
     width: 90% !important;
-    height: 200px;
+    height: 250px;
     position: relative !important;
     left: 1%;
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 10 0 0 0;
     border-radius: 30px;
     gap: 10px !important;
@@ -1384,6 +1392,16 @@ nav li:hover a:hover {
     vertical-align: top;
     text-align: justify;
   }
+  body main .cardshop h5 {
+    font-size: 18px;
+  }
+  body main .cardshop p {
+    display: none;
+  }
+  body main .cardshop:hover p {
+    font-size: 12px;
+    display: block;
+  }
   body main .base-elegirnos :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
     width: 50%;
     height: 50%;
@@ -1425,7 +1443,7 @@ nav li:hover a:hover {
   }
   body main .base-geolocali-form .datos p {
     display: flex word-break;
-    margin-bottom: 35%;
+    margin-bottom: 45%;
     font-size: 10px;
     color: #FFF;
   }

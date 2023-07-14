@@ -8,6 +8,7 @@ const botonCarrito = document.querySelector("section h1");
 const botonComprar = document.querySelector("#btnComprar");
 const botonesCategorias = document.querySelectorAll(".btnCategoria");
 
+
 class Producto {
     constructor(id, nombre, precio, categoria, imagen = false, precioReal, estado, tipoEnvio) {
         this.id = id;
@@ -155,6 +156,7 @@ function cargarProductos(productos) {
           </div>
         </div>
             `;
+
         // Obtener el valor actual de la API para producto.precioReal
         // Verificar si el precio es $0.00 y ocultar el elemento si es así
 
@@ -280,7 +282,26 @@ class Carrito {
         spanCantidadProductos.innerText = this.totalProductos;
         spanTotalCarrito.innerText = this.total;
     }
+    generarPDF() {
+        // Crea una instancia de jsPDF
+        var doc = new jsPDF();
 
+        // Agrega el contenido al PDF
+        doc.setFontSize(18);
+        doc.text('Carrito de Compras', 20, 20);
+
+        doc.setFontSize(14);
+        var posY = 40;
+        for (const producto of this.carrito) {
+            doc.text(`Producto: ${producto.nombre}`, 20, posY);
+            doc.text(`Precio: $${producto.precio}`, 20, posY + 10);
+            posY += 20;
+        }
+
+        // Guarda el PDF con un nombre único
+        var fileName = 'carrito-' + Date.now() + '.pdf';
+        doc.save(fileName);
+    }
     // Método para quitar o restar productos del carrito
     quitar(id) {
         // Recibimos como parámetro el ID del producto, con ese ID buscamos el índice
@@ -347,12 +368,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botonComprar.addEventListener("click", (event) => {
         event.preventDefault();
+        carrito.generarPDF();
         Swal.fire({
             title: "Su pedido está en camino",
             text: "¡Su compra ha sido realizada con éxito!",
             icon: "success",
             confirmButtonText: "Aceptar",
         });
+
+
+
         // Vacíamos el carrito
         carrito.vaciar();
         // Ocultamos el carrito en el HTML

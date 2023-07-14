@@ -163,10 +163,10 @@ nav {
                     display: block;
                     background-color: $color-slate-50 !important;
                     width: 90% !important;
-                    height: 200px;
+                    height: 250px;
                     position: relative !important;
                     left: 1%;
-                    margin-top: 20px;
+                    margin-top: 5px;
                     padding: 10 0 0 0;
                     border-radius: 30px;
                     gap: 10px !important;
@@ -220,6 +220,24 @@ nav {
                 }
             }
 
+            .cardshop {
+                h5 {
+                    font-size: 18px;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+
+            .cardshop:hover {
+
+                p {
+                    font-size: 12px;
+                    display: block;
+                }
+            }
+
             .base-elegirnos {
                 :is(.elijen1, .elijen2, .elijen3, .elijen4, .elijen5, .elijen6, .elijen7) {
                     width: 50%;
@@ -268,10 +286,9 @@ nav {
                     position: static;
                     margin-left: 50%;
                     max-width: 20%;
-
                     p {
                         display: flex word-break;
-                        margin-bottom: 35%;
+                        margin-bottom: 45%;
                         font-size: 10px;
                         color: $color-slate-50;
                     }
@@ -304,6 +321,7 @@ nav {
 @media screen and (min-width: 768px) and (max-width: 975px) {
     body {
         & main {
+
             & .row {
                 margin-top: 10vh;
             }
@@ -378,6 +396,7 @@ nav {
                 }
             }
         }
+
 
     }
 
