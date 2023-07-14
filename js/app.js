@@ -348,7 +348,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botonComprar.addEventListener("click", (event) => {
         event.preventDefault();
-        carrito.generarPDF();
         Swal.fire({
             title: "Su pedido está en camino",
             text: "¡Su compra ha sido realizada con éxito!",
